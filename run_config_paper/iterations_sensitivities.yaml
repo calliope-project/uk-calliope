@@ -1,0 +1,164 @@
+parallel:
+    iterations:
+        - override.techs.ccgt.costs.monetary.om_fuel: 0.01325
+          override.techs.ccgt_ccs.costs.monetary.om_fuel: 0.01325
+          override.techs.pv_csi_farm.costs.monetary.e_cap: 450.0
+          override.techs.pv_csi_rooftop.costs.monetary.e_cap: 800.0
+          override.techs.ccgt_ccs.costs.monetary.e_cap: 656.9
+          override.techs.coal_ccs.costs.monetary.e_cap: 1438.0
+        - override.techs.ccgt.costs.monetary.om_fuel: 0.01325
+          override.techs.ccgt_ccs.costs.monetary.om_fuel: 0.01325
+          override.techs.pv_csi_farm.costs.monetary.e_cap: 450.0
+          override.techs.pv_csi_rooftop.costs.monetary.e_cap: 800.0
+          override.techs.ccgt_ccs.costs.monetary.e_cap: 1313.8
+          override.techs.coal_ccs.costs.monetary.e_cap: 2876.0
+        - override.techs.ccgt.costs.monetary.om_fuel: 0.01325
+          override.techs.ccgt_ccs.costs.monetary.om_fuel: 0.01325
+          override.techs.pv_csi_farm.costs.monetary.e_cap: 450.0
+          override.techs.pv_csi_rooftop.costs.monetary.e_cap: 800.0
+          override.techs.ccgt_ccs.costs.monetary.e_cap: 2627.6
+          override.techs.coal_ccs.costs.monetary.e_cap: 5752.0
+        - override.techs.ccgt.costs.monetary.om_fuel: 0.01325
+          override.techs.ccgt_ccs.costs.monetary.om_fuel: 0.01325
+          override.techs.pv_csi_farm.costs.monetary.e_cap: 900.0
+          override.techs.pv_csi_rooftop.costs.monetary.e_cap: 1600.0
+          override.techs.ccgt_ccs.costs.monetary.e_cap: 656.9
+          override.techs.coal_ccs.costs.monetary.e_cap: 1438.0
+        - override.techs.ccgt.costs.monetary.om_fuel: 0.01325
+          override.techs.ccgt_ccs.costs.monetary.om_fuel: 0.01325
+          override.techs.pv_csi_farm.costs.monetary.e_cap: 900.0
+          override.techs.pv_csi_rooftop.costs.monetary.e_cap: 1600.0
+          override.techs.ccgt_ccs.costs.monetary.e_cap: 1313.8
+          override.techs.coal_ccs.costs.monetary.e_cap: 2876.0
+        - override.techs.ccgt.costs.monetary.om_fuel: 0.01325
+          override.techs.ccgt_ccs.costs.monetary.om_fuel: 0.01325
+          override.techs.pv_csi_farm.costs.monetary.e_cap: 900.0
+          override.techs.pv_csi_rooftop.costs.monetary.e_cap: 1600.0
+          override.techs.ccgt_ccs.costs.monetary.e_cap: 2627.6
+          override.techs.coal_ccs.costs.monetary.e_cap: 5752.0
+        - override.techs.ccgt.costs.monetary.om_fuel: 0.01325
+          override.techs.ccgt_ccs.costs.monetary.om_fuel: 0.01325
+          override.techs.pv_csi_farm.costs.monetary.e_cap: 1800.0
+          override.techs.pv_csi_rooftop.costs.monetary.e_cap: 3200.0
+          override.techs.ccgt_ccs.costs.monetary.e_cap: 656.9
+          override.techs.coal_ccs.costs.monetary.e_cap: 1438.0
+        - override.techs.ccgt.costs.monetary.om_fuel: 0.01325
+          override.techs.ccgt_ccs.costs.monetary.om_fuel: 0.01325
+          override.techs.pv_csi_farm.costs.monetary.e_cap: 1800.0
+          override.techs.pv_csi_rooftop.costs.monetary.e_cap: 3200.0
+          override.techs.ccgt_ccs.costs.monetary.e_cap: 1313.8
+          override.techs.coal_ccs.costs.monetary.e_cap: 2876.0
+        - override.techs.ccgt.costs.monetary.om_fuel: 0.01325
+          override.techs.ccgt_ccs.costs.monetary.om_fuel: 0.01325
+          override.techs.pv_csi_farm.costs.monetary.e_cap: 1800.0
+          override.techs.pv_csi_rooftop.costs.monetary.e_cap: 3200.0
+          override.techs.ccgt_ccs.costs.monetary.e_cap: 2627.6
+          override.techs.coal_ccs.costs.monetary.e_cap: 5752.0
+        - override.techs.ccgt.costs.monetary.om_fuel: 0.0265
+          override.techs.ccgt_ccs.costs.monetary.om_fuel: 0.0265
+          override.techs.pv_csi_farm.costs.monetary.e_cap: 450.0
+          override.techs.pv_csi_rooftop.costs.monetary.e_cap: 800.0
+          override.techs.ccgt_ccs.costs.monetary.e_cap: 656.9
+          override.techs.coal_ccs.costs.monetary.e_cap: 1438.0
+        - override.techs.ccgt.costs.monetary.om_fuel: 0.0265
+          override.techs.ccgt_ccs.costs.monetary.om_fuel: 0.0265
+          override.techs.pv_csi_farm.costs.monetary.e_cap: 450.0
+          override.techs.pv_csi_rooftop.costs.monetary.e_cap: 800.0
+          override.techs.ccgt_ccs.costs.monetary.e_cap: 1313.8
+          override.techs.coal_ccs.costs.monetary.e_cap: 2876.0
+        - override.techs.ccgt.costs.monetary.om_fuel: 0.0265
+          override.techs.ccgt_ccs.costs.monetary.om_fuel: 0.0265
+          override.techs.pv_csi_farm.costs.monetary.e_cap: 450.0
+          override.techs.pv_csi_rooftop.costs.monetary.e_cap: 800.0
+          override.techs.ccgt_ccs.costs.monetary.e_cap: 2627.6
+          override.techs.coal_ccs.costs.monetary.e_cap: 5752.0
+        - override.techs.ccgt.costs.monetary.om_fuel: 0.0265
+          override.techs.ccgt_ccs.costs.monetary.om_fuel: 0.0265
+          override.techs.pv_csi_farm.costs.monetary.e_cap: 900.0
+          override.techs.pv_csi_rooftop.costs.monetary.e_cap: 1600.0
+          override.techs.ccgt_ccs.costs.monetary.e_cap: 656.9
+          override.techs.coal_ccs.costs.monetary.e_cap: 1438.0
+        - override.techs.ccgt.costs.monetary.om_fuel: 0.0265
+          override.techs.ccgt_ccs.costs.monetary.om_fuel: 0.0265
+          override.techs.pv_csi_farm.costs.monetary.e_cap: 900.0
+          override.techs.pv_csi_rooftop.costs.monetary.e_cap: 1600.0
+          override.techs.ccgt_ccs.costs.monetary.e_cap: 1313.8
+          override.techs.coal_ccs.costs.monetary.e_cap: 2876.0
+        - override.techs.ccgt.costs.monetary.om_fuel: 0.0265
+          override.techs.ccgt_ccs.costs.monetary.om_fuel: 0.0265
+          override.techs.pv_csi_farm.costs.monetary.e_cap: 900.0
+          override.techs.pv_csi_rooftop.costs.monetary.e_cap: 1600.0
+          override.techs.ccgt_ccs.costs.monetary.e_cap: 2627.6
+          override.techs.coal_ccs.costs.monetary.e_cap: 5752.0
+        - override.techs.ccgt.costs.monetary.om_fuel: 0.0265
+          override.techs.ccgt_ccs.costs.monetary.om_fuel: 0.0265
+          override.techs.pv_csi_farm.costs.monetary.e_cap: 1800.0
+          override.techs.pv_csi_rooftop.costs.monetary.e_cap: 3200.0
+          override.techs.ccgt_ccs.costs.monetary.e_cap: 656.9
+          override.techs.coal_ccs.costs.monetary.e_cap: 1438.0
+        - override.techs.ccgt.costs.monetary.om_fuel: 0.0265
+          override.techs.ccgt_ccs.costs.monetary.om_fuel: 0.0265
+          override.techs.pv_csi_farm.costs.monetary.e_cap: 1800.0
+          override.techs.pv_csi_rooftop.costs.monetary.e_cap: 3200.0
+          override.techs.ccgt_ccs.costs.monetary.e_cap: 1313.8
+          override.techs.coal_ccs.costs.monetary.e_cap: 2876.0
+        - override.techs.ccgt.costs.monetary.om_fuel: 0.0265
+          override.techs.ccgt_ccs.costs.monetary.om_fuel: 0.0265
+          override.techs.pv_csi_farm.costs.monetary.e_cap: 1800.0
+          override.techs.pv_csi_rooftop.costs.monetary.e_cap: 3200.0
+          override.techs.ccgt_ccs.costs.monetary.e_cap: 2627.6
+          override.techs.coal_ccs.costs.monetary.e_cap: 5752.0
+        - override.techs.ccgt.costs.monetary.om_fuel: 0.053
+          override.techs.ccgt_ccs.costs.monetary.om_fuel: 0.053
+          override.techs.pv_csi_farm.costs.monetary.e_cap: 450.0
+          override.techs.pv_csi_rooftop.costs.monetary.e_cap: 800.0
+          override.techs.ccgt_ccs.costs.monetary.e_cap: 656.9
+          override.techs.coal_ccs.costs.monetary.e_cap: 1438.0
+        - override.techs.ccgt.costs.monetary.om_fuel: 0.053
+          override.techs.ccgt_ccs.costs.monetary.om_fuel: 0.053
+          override.techs.pv_csi_farm.costs.monetary.e_cap: 450.0
+          override.techs.pv_csi_rooftop.costs.monetary.e_cap: 800.0
+          override.techs.ccgt_ccs.costs.monetary.e_cap: 1313.8
+          override.techs.coal_ccs.costs.monetary.e_cap: 2876.0
+        - override.techs.ccgt.costs.monetary.om_fuel: 0.053
+          override.techs.ccgt_ccs.costs.monetary.om_fuel: 0.053
+          override.techs.pv_csi_farm.costs.monetary.e_cap: 450.0
+          override.techs.pv_csi_rooftop.costs.monetary.e_cap: 800.0
+          override.techs.ccgt_ccs.costs.monetary.e_cap: 2627.6
+          override.techs.coal_ccs.costs.monetary.e_cap: 5752.0
+        - override.techs.ccgt.costs.monetary.om_fuel: 0.053
+          override.techs.ccgt_ccs.costs.monetary.om_fuel: 0.053
+          override.techs.pv_csi_farm.costs.monetary.e_cap: 900.0
+          override.techs.pv_csi_rooftop.costs.monetary.e_cap: 1600.0
+          override.techs.ccgt_ccs.costs.monetary.e_cap: 656.9
+          override.techs.coal_ccs.costs.monetary.e_cap: 1438.0
+        - override.techs.ccgt.costs.monetary.om_fuel: 0.053
+          override.techs.ccgt_ccs.costs.monetary.om_fuel: 0.053
+          override.techs.pv_csi_farm.costs.monetary.e_cap: 900.0
+          override.techs.pv_csi_rooftop.costs.monetary.e_cap: 1600.0
+          override.techs.ccgt_ccs.costs.monetary.e_cap: 1313.8
+          override.techs.coal_ccs.costs.monetary.e_cap: 2876.0
+        - override.techs.ccgt.costs.monetary.om_fuel: 0.053
+          override.techs.ccgt_ccs.costs.monetary.om_fuel: 0.053
+          override.techs.pv_csi_farm.costs.monetary.e_cap: 900.0
+          override.techs.pv_csi_rooftop.costs.monetary.e_cap: 1600.0
+          override.techs.ccgt_ccs.costs.monetary.e_cap: 2627.6
+          override.techs.coal_ccs.costs.monetary.e_cap: 5752.0
+        - override.techs.ccgt.costs.monetary.om_fuel: 0.053
+          override.techs.ccgt_ccs.costs.monetary.om_fuel: 0.053
+          override.techs.pv_csi_farm.costs.monetary.e_cap: 1800.0
+          override.techs.pv_csi_rooftop.costs.monetary.e_cap: 3200.0
+          override.techs.ccgt_ccs.costs.monetary.e_cap: 656.9
+          override.techs.coal_ccs.costs.monetary.e_cap: 1438.0
+        - override.techs.ccgt.costs.monetary.om_fuel: 0.053
+          override.techs.ccgt_ccs.costs.monetary.om_fuel: 0.053
+          override.techs.pv_csi_farm.costs.monetary.e_cap: 1800.0
+          override.techs.pv_csi_rooftop.costs.monetary.e_cap: 3200.0
+          override.techs.ccgt_ccs.costs.monetary.e_cap: 1313.8
+          override.techs.coal_ccs.costs.monetary.e_cap: 2876.0
+        - override.techs.ccgt.costs.monetary.om_fuel: 0.053
+          override.techs.ccgt_ccs.costs.monetary.om_fuel: 0.053
+          override.techs.pv_csi_farm.costs.monetary.e_cap: 1800.0
+          override.techs.pv_csi_rooftop.costs.monetary.e_cap: 3200.0
+          override.techs.ccgt_ccs.costs.monetary.e_cap: 2627.6
+          override.techs.coal_ccs.costs.monetary.e_cap: 5752.0

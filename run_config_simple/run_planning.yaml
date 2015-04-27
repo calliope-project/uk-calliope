@@ -1,0 +1,8 @@
+model: ../model_config/model_1.yaml
+
+time:
+    resolution: 6  # Uniformly reduce resolution to 6-hourly
+
+mode: plan
+
+solver: gurobi

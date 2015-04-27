@@ -1,0 +1,5 @@
+model: ../model_config/model_op_2012.yaml
+
+mode: operate
+
+solver: gurobi

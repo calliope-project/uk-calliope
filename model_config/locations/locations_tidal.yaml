@@ -1,0 +1,27 @@
+# For tidal_range locations, assuming 4.5 W/m2 and locations/areas from {mackay2008_tidal}
+# For tidal_stream locations, using data from Table G.8 and Figure G.7 in {mackay2008_tidal}
+
+locations:
+    Z1_3:
+        override:
+            tidal_stream.constraints.e_cap_max: 8500000  # {mackay2008_tidal}, 50km2 at 170W/m2
+    Z4:
+        override:
+            tidal_stream.constraints.e_cap_max: 2100000  # {mackay2008_tidal}, 300km2 at 7W/m2
+    Z6:
+        override:
+            tidal_stream.constraints.e_cap_max: 3600000  # {mackay2008_tidal}, 400km2 at 9W/m2
+    Z9:
+        override:
+            tidal_range.constraints.e_cap_max: 1800000  # {mackay2008_tidal}, Blackpool, 400km2
+            tidal_stream.constraints.e_cap_max: 2900000  # {mackay2008_tidal}, 1000km2 @ 2.9W/m2
+    Z12:
+        override:
+            tidal_range.constraints.e_cap_max: 1800000  # {mackay2008_tidal}, The Wash, 400km2
+    Z13:
+        override:
+            tidal_range.constraints.e_cap_max: 4000000  # {mackay2008_tidal}, Severn, 2-4GW
+            tidal_stream.constraints.e_cap_max: 2800000  # {mackay2008_tidal}, 350km2 at 8W/m2
+    Z16:
+        override:
+            tidal_stream.constraints.e_cap_max: 2800000  # {mackay2008_tidal}, 400km2 at 7W/m2

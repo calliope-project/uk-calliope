@@ -1,0 +1,521 @@
+locations:
+    Z10:
+        override:
+            ccgt_0:
+                constraints:
+                    e_cap_max: 4770000.0
+                    e_cap_max_force: true
+            ocgt_0:
+                constraints:
+                    e_cap_max: 15000.0
+                    e_cap_max_force: true
+            nuclear_0:
+                constraints:
+                    e_cap_max: 0.0
+                    e_cap_max_force: true
+            coal_0:
+                constraints:
+                    e_cap_max: 3972000.0
+                    e_cap_max_force: true
+            wind_offshore:
+                constraints:
+                    e_cap_max: 0.0
+                    e_cap_max_force: true
+            wind_onshore:
+                constraints:
+                    e_cap_max: 0.0
+                    e_cap_max_force: true
+    Z11:
+        override:
+            ccgt_0:
+                constraints:
+                    e_cap_max: 232000.0
+                    e_cap_max_force: true
+            ocgt_0:
+                constraints:
+                    e_cap_max: 43000.0
+                    e_cap_max_force: true
+            nuclear_0:
+                constraints:
+                    e_cap_max: 0.0
+                    e_cap_max_force: true
+            coal_0:
+                constraints:
+                    e_cap_max: 3960000.0
+                    e_cap_max_force: true
+            wind_offshore:
+                constraints:
+                    e_cap_max: 0.0
+                    e_cap_max_force: true
+            wind_onshore:
+                constraints:
+                    e_cap_max: 0.0
+                    e_cap_max_force: true
+    Z12:
+        override:
+            ccgt_0:
+                constraints:
+                    e_cap_max: 3831100.0
+                    e_cap_max_force: true
+            ocgt_0:
+                constraints:
+                    e_cap_max: 0.0
+                    e_cap_max_force: true
+            nuclear_0:
+                constraints:
+                    e_cap_max: 1200000.0
+                    e_cap_max_force: true
+            coal_0:
+                constraints:
+                    e_cap_max: 0.0
+                    e_cap_max_force: true
+            wind_offshore:
+                constraints:
+                    e_cap_max: 250000.0
+                    e_cap_max_force: true
+            wind_onshore:
+                constraints:
+                    e_cap_max: 750000.0
+                    e_cap_max_force: true
+    Z13:
+        override:
+            ccgt_0:
+                constraints:
+                    e_cap_max: 7531200.0
+                    e_cap_max_force: true
+            ocgt_0:
+                constraints:
+                    e_cap_max: 1732000.0
+                    e_cap_max_force: true
+            nuclear_0:
+                constraints:
+                    e_cap_max: 0.0
+                    e_cap_max_force: true
+            coal_0:
+                constraints:
+                    e_cap_max: 2531000.0
+                    e_cap_max_force: true
+            wind_offshore:
+                constraints:
+                    e_cap_max: 0.0
+                    e_cap_max_force: true
+            wind_onshore:
+                constraints:
+                    e_cap_max: 0.0
+                    e_cap_max_force: true
+    Z14:
+        override:
+            ccgt_0:
+                constraints:
+                    e_cap_max: 2237000.0
+                    e_cap_max_force: true
+            ocgt_0:
+                constraints:
+                    e_cap_max: 1619000.0
+                    e_cap_max_force: true
+            nuclear_0:
+                constraints:
+                    e_cap_max: 0.0
+                    e_cap_max_force: true
+            coal_0:
+                constraints:
+                    e_cap_max: 0.0
+                    e_cap_max_force: true
+            wind_offshore:
+                constraints:
+                    e_cap_max: 0.0
+                    e_cap_max_force: true
+            wind_onshore:
+                constraints:
+                    e_cap_max: 0.0
+                    e_cap_max_force: true
+    Z15:
+        override:
+            ccgt_0:
+                constraints:
+                    e_cap_max: 3145200.0
+                    e_cap_max_force: true
+            ocgt_0:
+                constraints:
+                    e_cap_max: 3347000.0
+                    e_cap_max_force: true
+            nuclear_0:
+                constraints:
+                    e_cap_max: 1082000.0
+                    e_cap_max_force: true
+            coal_0:
+                constraints:
+                    e_cap_max: 1104000.0
+                    e_cap_max_force: true
+            wind_offshore:
+                constraints:
+                    e_cap_max: 1300000.0
+                    e_cap_max_force: true
+            wind_onshore:
+                constraints:
+                    e_cap_max: 126000.0
+                    e_cap_max_force: true
+    Z16:
+        override:
+            ccgt_0:
+                constraints:
+                    e_cap_max: 1356000.0
+                    e_cap_max_force: true
+            ocgt_0:
+                constraints:
+                    e_cap_max: 1418900.0
+                    e_cap_max_force: true
+            nuclear_0:
+                constraints:
+                    e_cap_max: 0.0
+                    e_cap_max_force: true
+            coal_0:
+                constraints:
+                    e_cap_max: 0.0
+                    e_cap_max_force: true
+            wind_offshore:
+                constraints:
+                    e_cap_max: 0.0
+                    e_cap_max_force: true
+            wind_onshore:
+                constraints:
+                    e_cap_max: 0.0
+                    e_cap_max_force: true
+    Z17:
+        override:
+            ccgt_0:
+                constraints:
+                    e_cap_max: 905000.0
+                    e_cap_max_force: true
+            ocgt_0:
+                constraints:
+                    e_cap_max: 140000.0
+                    e_cap_max_force: true
+            nuclear_0:
+                constraints:
+                    e_cap_max: 1261000.0
+                    e_cap_max_force: true
+            coal_0:
+                constraints:
+                    e_cap_max: 0.0
+                    e_cap_max_force: true
+            wind_offshore:
+                constraints:
+                    e_cap_max: 0.0
+                    e_cap_max_force: true
+            wind_onshore:
+                constraints:
+                    e_cap_max: 0.0
+                    e_cap_max_force: true
+    Z1_1:
+        override:
+            ccgt_0:
+                constraints:
+                    e_cap_max: 0.0
+                    e_cap_max_force: true
+            ocgt_0:
+                constraints:
+                    e_cap_max: 0.0
+                    e_cap_max_force: true
+            nuclear_0:
+                constraints:
+                    e_cap_max: 0.0
+                    e_cap_max_force: true
+            coal_0:
+                constraints:
+                    e_cap_max: 0.0
+                    e_cap_max_force: true
+            wind_offshore:
+                constraints:
+                    e_cap_max: 0.0
+                    e_cap_max_force: true
+            wind_onshore:
+                constraints:
+                    e_cap_max: 0.0
+                    e_cap_max_force: true
+    Z1_2:
+        override:
+            ccgt_0:
+                constraints:
+                    e_cap_max: 0.0
+                    e_cap_max_force: true
+            ocgt_0:
+                constraints:
+                    e_cap_max: 0.0
+                    e_cap_max_force: true
+            nuclear_0:
+                constraints:
+                    e_cap_max: 0.0
+                    e_cap_max_force: true
+            coal_0:
+                constraints:
+                    e_cap_max: 0.0
+                    e_cap_max_force: true
+            wind_offshore:
+                constraints:
+                    e_cap_max: 0.0
+                    e_cap_max_force: true
+            wind_onshore:
+                constraints:
+                    e_cap_max: 0.0
+                    e_cap_max_force: true
+    Z1_3:
+        override:
+            ccgt_0:
+                constraints:
+                    e_cap_max: 0.0
+                    e_cap_max_force: true
+            ocgt_0:
+                constraints:
+                    e_cap_max: 0.0
+                    e_cap_max_force: true
+            nuclear_0:
+                constraints:
+                    e_cap_max: 0.0
+                    e_cap_max_force: true
+            coal_0:
+                constraints:
+                    e_cap_max: 0.0
+                    e_cap_max_force: true
+            wind_offshore:
+                constraints:
+                    e_cap_max: 0.0
+                    e_cap_max_force: true
+            wind_onshore:
+                constraints:
+                    e_cap_max: 0.0
+                    e_cap_max_force: true
+    Z1_4:
+        override:
+            ccgt_0:
+                constraints:
+                    e_cap_max: 10000.0
+                    e_cap_max_force: true
+            ocgt_0:
+                constraints:
+                    e_cap_max: 0.0
+                    e_cap_max_force: true
+            nuclear_0:
+                constraints:
+                    e_cap_max: 0.0
+                    e_cap_max_force: true
+            coal_0:
+                constraints:
+                    e_cap_max: 0.0
+                    e_cap_max_force: true
+            wind_offshore:
+                constraints:
+                    e_cap_max: 0.0
+                    e_cap_max_force: true
+            wind_onshore:
+                constraints:
+                    e_cap_max: 1101900.0
+                    e_cap_max_force: true
+    Z2:
+        override:
+            ccgt_0:
+                constraints:
+                    e_cap_max: 1458000.0
+                    e_cap_max_force: true
+            ocgt_0:
+                constraints:
+                    e_cap_max: 901000.0
+                    e_cap_max_force: true
+            nuclear_0:
+                constraints:
+                    e_cap_max: 0.0
+                    e_cap_max_force: true
+            coal_0:
+                constraints:
+                    e_cap_max: 0.0
+                    e_cap_max_force: true
+            wind_offshore:
+                constraints:
+                    e_cap_max: 0.0
+                    e_cap_max_force: true
+            wind_onshore:
+                constraints:
+                    e_cap_max: 69500.0
+                    e_cap_max_force: true
+    Z3:
+        override:
+            ccgt_0:
+                constraints:
+                    e_cap_max: 0.0
+                    e_cap_max_force: true
+            ocgt_0:
+                constraints:
+                    e_cap_max: 0.0
+                    e_cap_max_force: true
+            nuclear_0:
+                constraints:
+                    e_cap_max: 0.0
+                    e_cap_max_force: true
+            coal_0:
+                constraints:
+                    e_cap_max: 0.0
+                    e_cap_max_force: true
+            wind_offshore:
+                constraints:
+                    e_cap_max: 0.0
+                    e_cap_max_force: true
+            wind_onshore:
+                constraints:
+                    e_cap_max: 88000.0
+                    e_cap_max_force: true
+    Z4:
+        override:
+            ccgt_0:
+                constraints:
+                    e_cap_max: 0.0
+                    e_cap_max_force: true
+            ocgt_0:
+                constraints:
+                    e_cap_max: 0.0
+                    e_cap_max_force: true
+            nuclear_0:
+                constraints:
+                    e_cap_max: 0.0
+                    e_cap_max_force: true
+            coal_0:
+                constraints:
+                    e_cap_max: 0.0
+                    e_cap_max_force: true
+            wind_offshore:
+                constraints:
+                    e_cap_max: 0.0
+                    e_cap_max_force: true
+            wind_onshore:
+                constraints:
+                    e_cap_max: 560000.0
+                    e_cap_max_force: true
+    Z5:
+        override:
+            ccgt_0:
+                constraints:
+                    e_cap_max: 123000.0
+                    e_cap_max_force: true
+            ocgt_0:
+                constraints:
+                    e_cap_max: 0.0
+                    e_cap_max_force: true
+            nuclear_0:
+                constraints:
+                    e_cap_max: 0.0
+                    e_cap_max_force: true
+            coal_0:
+                constraints:
+                    e_cap_max: 2284000.0
+                    e_cap_max_force: true
+            wind_offshore:
+                constraints:
+                    e_cap_max: 0.0
+                    e_cap_max_force: true
+            wind_onshore:
+                constraints:
+                    e_cap_max: 0.0
+                    e_cap_max_force: true
+    Z6:
+        override:
+            ccgt_0:
+                constraints:
+                    e_cap_max: 23200.0
+                    e_cap_max_force: true
+            ocgt_0:
+                constraints:
+                    e_cap_max: 0.0
+                    e_cap_max_force: true
+            nuclear_0:
+                constraints:
+                    e_cap_max: 2289000.0
+                    e_cap_max_force: true
+            coal_0:
+                constraints:
+                    e_cap_max: 1104000.0
+                    e_cap_max_force: true
+            wind_offshore:
+                constraints:
+                    e_cap_max: 0.0
+                    e_cap_max_force: true
+            wind_onshore:
+                constraints:
+                    e_cap_max: 1461750.0
+                    e_cap_max_force: true
+    Z7:
+        override:
+            ccgt_0:
+                constraints:
+                    e_cap_max: 2078500.0
+                    e_cap_max_force: true
+            ocgt_0:
+                constraints:
+                    e_cap_max: 0.0
+                    e_cap_max_force: true
+            nuclear_0:
+                constraints:
+                    e_cap_max: 1208000.0
+                    e_cap_max_force: true
+            coal_0:
+                constraints:
+                    e_cap_max: 393000.0
+                    e_cap_max_force: true
+            wind_offshore:
+                constraints:
+                    e_cap_max: 0.0
+                    e_cap_max_force: true
+            wind_onshore:
+                constraints:
+                    e_cap_max: 0.0
+                    e_cap_max_force: true
+    Z8:
+        override:
+            ccgt_0:
+                constraints:
+                    e_cap_max: 6540200.0
+                    e_cap_max_force: true
+            ocgt_0:
+                constraints:
+                    e_cap_max: 36000.0
+                    e_cap_max_force: true
+            nuclear_0:
+                constraints:
+                    e_cap_max: 0.0
+                    e_cap_max_force: true
+            coal_0:
+                constraints:
+                    e_cap_max: 7786000.0
+                    e_cap_max_force: true
+            wind_offshore:
+                constraints:
+                    e_cap_max: 0.0
+                    e_cap_max_force: true
+            wind_onshore:
+                constraints:
+                    e_cap_max: 0.0
+                    e_cap_max_force: true
+    Z9:
+        override:
+            ccgt_0:
+                constraints:
+                    e_cap_max: 3184500.0
+                    e_cap_max_force: true
+            ocgt_0:
+                constraints:
+                    e_cap_max: 0.0
+                    e_cap_max_force: true
+            nuclear_0:
+                constraints:
+                    e_cap_max: 3387000.0
+                    e_cap_max_force: true
+            coal_0:
+                constraints:
+                    e_cap_max: 1961000.0
+                    e_cap_max_force: true
+            wind_offshore:
+                constraints:
+                    e_cap_max: 906000.0
+                    e_cap_max_force: true
+            wind_onshore:
+                constraints:
+                    e_cap_max: 332000.0
+                    e_cap_max_force: true

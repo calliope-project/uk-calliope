@@ -1,0 +1,164 @@
+#
+# Defines installed hydro and pumped storage plants (2010 data)
+#
+
+locations:
+    Z1_4:
+        override:
+            hydro_0:
+                constraints:
+                    e_cap_max: 526.28
+            pumped_storage_0:
+                constraints:
+                    e_cap_max: 300.0
+                    e_cap_max_force: true
+                    s_cap_max: 6300000  # Foyers, {mackay2008_pumped}
+                    s_cap_max_force: true
+    Z10:
+        override:
+            hydro_0:
+                constraints:
+                    e_cap_max: 0.0
+            pumped_storage_0:
+                constraints:
+                    e_cap_max: 0.0
+                    e_cap_max_force: true
+    Z11:
+        override:
+            hydro_0:
+                constraints:
+                    e_cap_max: 0.0
+            pumped_storage_0:
+                constraints:
+                    e_cap_max: 0.0
+                    e_cap_max_force: true
+    Z12:
+        override:
+            hydro_0:
+                constraints:
+                    e_cap_max: 0.0
+            pumped_storage_0:
+                constraints:
+                    e_cap_max: 0.0
+                    e_cap_max_force: true
+    Z13:
+        override:
+            hydro_0:
+                constraints:
+                    e_cap_max: 0.0
+            pumped_storage_0:
+                constraints:
+                    e_cap_max: 0.0
+                    e_cap_max_force: true
+    Z14:
+        override:
+            hydro_0:
+                constraints:
+                    e_cap_max: 0.0
+            pumped_storage_0:
+                constraints:
+                    e_cap_max: 0.0
+                    e_cap_max_force: true
+    Z15:
+        override:
+            hydro_0:
+                constraints:
+                    e_cap_max: 0.0
+            pumped_storage_0:
+                constraints:
+                    e_cap_max: 0.0
+                    e_cap_max_force: true
+    Z16:
+        override:
+            hydro_0:
+                constraints:
+                    e_cap_max: 0.0
+            pumped_storage_0:
+                constraints:
+                    e_cap_max: 0.0
+                    e_cap_max_force: true
+    Z17:
+        override:
+            hydro_0:
+                constraints:
+                    e_cap_max: 0.0
+            pumped_storage_0:
+                constraints:
+                    e_cap_max: 0.0
+                    e_cap_max_force: true
+    Z2:
+        override:
+            hydro_0:
+                constraints:
+                    e_cap_max: 0.0
+            pumped_storage_0:
+                constraints:
+                    e_cap_max: 0.0
+                    e_cap_max_force: true
+    Z3:
+        override:
+            hydro_0:
+                constraints:
+                    e_cap_max: 193.0
+            pumped_storage_0:
+                constraints:
+                    e_cap_max: 0.0
+                    e_cap_max_force: true
+    Z4:
+        override:
+            hydro_0:
+                constraints:
+                    e_cap_max: 344.0
+            pumped_storage_0:
+                constraints:
+                    e_cap_max: 440.0
+                    e_cap_max_force: true
+                    s_cap_max: 10000000  # Cruachan, {mackay2008_pumped}
+                    s_cap_max_force: true
+    Z5:
+        override:
+            hydro_0:
+                constraints:
+                    e_cap_max: 0.0
+            pumped_storage_0:
+                constraints:
+                    e_cap_max: 0.0
+                    e_cap_max_force: true
+    Z6:
+        override:
+            hydro_0:
+                constraints:
+                    e_cap_max: 33.0
+            pumped_storage_0:
+                constraints:
+                    e_cap_max: 0.0
+                    e_cap_max_force: true
+    Z7:
+        override:
+            hydro_0:
+                constraints:
+                    e_cap_max: 0.0
+            pumped_storage_0:
+                constraints:
+                    e_cap_max: 0.0
+                    e_cap_max_force: true
+    Z8:
+        override:
+            hydro_0:
+                constraints:
+                    e_cap_max: 0.0
+            pumped_storage_0:
+                constraints:
+                    e_cap_max: 0.0
+                    e_cap_max_force: true
+    Z9:
+        override:
+            hydro_0:
+                constraints:
+                    e_cap_max: 0.0
+            pumped_storage_0:
+                constraints:
+                    e_cap_max: 2004.0
+                    e_cap_max_force: true
+                    s_cap_max: 10400000  # Dinorwig + Ffestiniog, {mackay2008_pumped}
+                    s_cap_max_force: true

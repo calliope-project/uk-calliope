@@ -1,0 +1,7 @@
+time:
+    resolution: 24
+    masks:
+        - function: mask_relative_difference
+          options: {target1: demand_power, target2: wind_offshore, days: 4, padding_days: 1}
+
+mode: plan

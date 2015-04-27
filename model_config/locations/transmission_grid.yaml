@@ -1,0 +1,136 @@
+links:
+    Z1_4,Z1_1:
+        hvac:
+            constraints:
+                e_cap_max: 2000000
+                e_cap_max_force: true
+    Z1_4,Z1_2:
+        hvac:
+            constraints:
+                e_cap_max: 2000000
+                e_cap_max_force: true
+    Z1_4,Z1_3:
+        hvac:
+            constraints:
+                e_cap_max: 2000000
+                e_cap_max_force: true
+    Z2,Z1_4:
+        hvac:
+            constraints:
+                e_cap_max: 2000000
+                e_cap_max_force: true
+    Z3,Z2:
+        hvac:
+            constraints:
+                e_cap_max: 2000000
+                e_cap_max_force: true
+    Z4,Z3:
+        hvac:
+            constraints:
+                e_cap_max: 2000000
+                e_cap_max_force: true
+    Z5,Z3:
+        hvac:
+            constraints:
+                e_cap_max: 2000000
+                e_cap_max_force: true
+    Z6,Z5:
+        hvac:
+            constraints:
+                e_cap_max: 2000000
+                e_cap_max_force: true
+    Z7,Z6:
+        hvac:
+            constraints:
+                e_cap_max: 2000000
+                e_cap_max_force: true
+    Z8,Z7:
+        hvac:
+            constraints:
+                e_cap_max: 2000000
+                e_cap_max_force: true
+    Z9,Z7:
+        hvac:
+            constraints:
+                e_cap_max: 2000000
+                e_cap_max_force: true
+    Z9,Z8:
+        hvac:
+            constraints:
+                e_cap_max: 2000000
+                e_cap_max_force: true
+    Z10,Z8:
+        hvac:
+            constraints:
+                e_cap_max: 2000000
+                e_cap_max_force: true
+    Z11,Z9:
+        hvac:
+            constraints:
+                e_cap_max: 2000000
+                e_cap_max_force: true
+    Z11,Z10:
+        hvac:
+            constraints:
+                e_cap_max: 2000000
+                e_cap_max_force: true
+    Z12,Z10:
+        hvac:
+            constraints:
+                e_cap_max: 2000000
+                e_cap_max_force: true
+    Z12,Z11:
+        hvac:
+            constraints:
+                e_cap_max: 2000000
+                e_cap_max_force: true
+    Z13,Z11:
+        hvac:
+            constraints:
+                e_cap_max: 2000000
+                e_cap_max_force: true
+    Z13,Z12:
+        hvac:
+            constraints:
+                e_cap_max: 2000000
+                e_cap_max_force: true
+    Z14,Z12:
+        hvac:
+            constraints:
+                e_cap_max: 2000000
+                e_cap_max_force: true
+    Z15,Z12:
+        hvac:
+            constraints:
+                e_cap_max: 2000000
+                e_cap_max_force: true
+    Z15,Z14:
+        hvac:
+            constraints:
+                e_cap_max: 2000000
+                e_cap_max_force: true
+    Z16,Z13:
+        hvac:
+            constraints:
+                e_cap_max: 2000000
+                e_cap_max_force: true
+    Z16,Z14:
+        hvac:
+            constraints:
+                e_cap_max: 2000000
+                e_cap_max_force: true
+    Z16,Z15:
+        hvac:
+            constraints:
+                e_cap_max: 2000000
+                e_cap_max_force: true
+    Z17,Z13:
+        hvac:
+            constraints:
+                e_cap_max: 2000000
+                e_cap_max_force: true
+    Z17,Z16:
+        hvac:
+            constraints:
+                e_cap_max: 2000000
+                e_cap_max_force: true

@@ -1,0 +1,40 @@
+# Country-wide constraints (except those defined below)
+# Many technologies have build constraints defined on a per-technology basis,
+# see their definition files!
+
+locations:
+    Z1_4,Z2,Z3,Z4,Z5,Z6,Z7,Z8,Z9,Z10,Z11,Z12,Z13,Z17:
+        override:
+            ocgt.constraints.e_cap_max: 1000000
+            ccgt.constraints.e_cap_max: inf
+            ccgt_ccs.constraints.e_cap_max: inf
+            coal.constraints.e_cap_max: inf
+            coal_ccs.constraints.e_cap_max: inf
+            nuclear.constraints.e_cap_max: inf
+    Z14:  # London
+        override:
+            # Assume no CCGT or coal plants in London, but some OCGT
+            ocgt.constraints.e_cap_max: 500000  # no more than 500MW
+            ccgt.constraints.e_cap_max: 0
+            ccgt_ccs.constraints.e_cap_max: 0
+            coal.constraints.e_cap_max: 0
+            coal_ccs.constraints.e_cap_max: 0
+            nuclear.constraints.e_cap_max: 0
+    Z15,Z16:  # The two regions immediately south of London
+        override:
+            ocgt.constraints.e_cap_max: 1000000
+            ccgt.constraints.e_cap_max: inf
+            ccgt_ccs.constraints.e_cap_max: inf
+            coal.constraints.e_cap_max: inf
+            coal_ccs.constraints.e_cap_max: inf
+            # No nukes between London and southern coast
+            nuclear.constraints.e_cap_max: 0
+    Z1_1,Z1_2,Z1_3:  # Highlands and islands to the north
+        override:
+            ocgt.constraints.e_cap_max: 1000000
+            ccgt.constraints.e_cap_max: inf
+            ccgt_ccs.constraints.e_cap_max: inf
+            coal.constraints.e_cap_max: inf
+            coal_ccs.constraints.e_cap_max: inf
+            # No nukes in the northern highlands or on any islands
+            nuclear.constraints.e_cap_max: 0

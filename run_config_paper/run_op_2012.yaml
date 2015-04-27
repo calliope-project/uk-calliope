@@ -1,0 +1,10 @@
+import:
+    - cluster_environment.yaml
+    - iterations_dummy.yaml
+
+model: ../model_config/model_op_2012.yaml
+
+mode: operate
+
+parallel:
+    name: uks_2012

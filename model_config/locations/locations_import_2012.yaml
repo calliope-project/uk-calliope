@@ -1,0 +1,23 @@
+#
+# Defines HVDC import and export lines as of 2012
+#
+
+locations:
+    Z15:
+        override:
+            hvdc_import:
+                constraints:
+                    e_cap_max: 3000000  # 2000 MW to France, 1000 MW to BritNed, {netssys2011} Table F-13
+                    e_cap_max_force: true
+    Z9:
+        override:
+            hvdc_export:
+                constraints:
+                    e_cap_max: 500000  # 500 MW to Ireland, {netssys2011} Table F-13
+                    e_cap_max_force: true
+    Z6:
+        override:
+            hvdc_export:
+                constraints:
+                    e_cap_max: 250000  # 500 MW to Ireland, {netssys2011} Table F-13
+                    e_cap_max_force: true

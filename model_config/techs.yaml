@@ -1,0 +1,55 @@
+import:
+    - techs/wind_solar.yaml
+    - techs/fossil.yaml
+    - techs/nuclear.yaml
+    - techs/hydro.yaml
+    - techs/transmission.yaml
+    - techs/import.yaml
+    - techs/storage.yaml
+    - techs/tidal.yaml
+    - techs/csp.yaml
+
+techs:
+    supply_power:  # Parent for all other power supply technologies
+        parent: supply
+        carrier: power
+    # supply_power_* techs are purely for grouping purposes
+    supply_power_renewable:
+        costs:
+            domestic:
+                om_var: 1
+        stack_weight: 50
+        parent: supply_power
+    supply_power_nuclear:
+        costs:
+            domestic:
+                om_var: 0.5
+        stack_weight: 1000
+        parent: supply_power
+    supply_power_fossil:
+        costs:
+            domestic:
+                om_var: 0.5
+        parent: supply_power
+    supply_power_import:
+        costs:
+            domestic:
+                om_var: 0
+        parent: supply_power
+    demand_power:
+        parent: demand
+        carrier: power
+    unmet_demand_power:
+        name: 'Unmet Power Demand'
+        parent: unmet_demand  # a default supply tech with VERY high fuel cost
+        carrier: power
+    unmet_demand_power_supply:
+        name: 'Unmet Power Dummy Supply'
+        parent: unmet_demand_as_supply_tech
+        carrier: power
+        costs:
+            monetary:
+                om_var: 0.01
+    storage_power:
+        parent: storage
+        carrier: power

@@ -1,0 +1,121 @@
+locations:
+    Z1_1:
+        override:
+            pv_csi_rooftop:
+                constraints:
+                    e_cap_max: 123.4
+                    e_cap_max_force: true
+    Z1_2:
+        override:
+            pv_csi_rooftop:
+                constraints:
+                    e_cap_max: 568.43
+                    e_cap_max_force: true
+    Z1_3:
+        override:
+            pv_csi_rooftop:
+                constraints:
+                    e_cap_max: 11137.125
+                    e_cap_max_force: true
+    Z1_4:
+        override:
+            pv_csi_rooftop:
+                constraints:
+                    e_cap_max: 0.0
+                    e_cap_max_force: true
+    Z10:
+        override:
+            pv_csi_rooftop:
+                constraints:
+                    e_cap_max: 81009.155
+                    e_cap_max_force: true
+    Z11:
+        override:
+            pv_csi_rooftop:
+                constraints:
+                    e_cap_max: 257492.218
+                    e_cap_max_force: true
+    Z12:
+        override:
+            pv_csi_rooftop:
+                constraints:
+                    e_cap_max: 222722.402
+                    e_cap_max_force: true
+    Z13:
+        override:
+            pv_csi_rooftop:
+                constraints:
+                    e_cap_max: 293998.218
+                    e_cap_max_force: true
+    Z14:
+        override:
+            pv_csi_rooftop:
+                constraints:
+                    e_cap_max: 88065.853
+                    e_cap_max_force: true
+    Z15:
+        override:
+            pv_csi_rooftop:
+                constraints:
+                    e_cap_max: 55400.625
+                    e_cap_max_force: true
+    Z16:
+        override:
+            pv_csi_rooftop:
+                constraints:
+                    e_cap_max: 169249.534
+                    e_cap_max_force: true
+    Z17:
+        override:
+            pv_csi_rooftop:
+                constraints:
+                    e_cap_max: 322594.299
+                    e_cap_max_force: true
+    Z2:
+        override:
+            pv_csi_rooftop:
+                constraints:
+                    e_cap_max: 18762.104
+                    e_cap_max_force: true
+    Z3:
+        override:
+            pv_csi_rooftop:
+                constraints:
+                    e_cap_max: 27149.835
+                    e_cap_max_force: true
+    Z4:
+        override:
+            pv_csi_rooftop:
+                constraints:
+                    e_cap_max: 3027.142
+                    e_cap_max_force: true
+    Z5:
+        override:
+            pv_csi_rooftop:
+                constraints:
+                    e_cap_max: 37749.341
+                    e_cap_max_force: true
+    Z6:
+        override:
+            pv_csi_rooftop:
+                constraints:
+                    e_cap_max: 15327.7
+                    e_cap_max_force: true
+    Z7:
+        override:
+            pv_csi_rooftop:
+                constraints:
+                    e_cap_max: 83774.835
+                    e_cap_max_force: true
+    Z8:
+        override:
+            pv_csi_rooftop:
+                constraints:
+                    e_cap_max: 184441.429
+                    e_cap_max_force: true
+    Z9:
+        override:
+            pv_csi_rooftop:
+                constraints:
+                    e_cap_max: 175264.466
+                    e_cap_max_force: true

@@ -1,0 +1,7 @@
+import:
+    - base_e.yaml
+
+model: ../model_config/model_6.yaml
+
+parallel:
+    name: uks_e6
