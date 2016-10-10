@@ -8,7 +8,7 @@ techs:
         color: '#8B0043'
         parent: tidal
         constraints:
-            e_cap_max: 0  # Default is to disallow
+            e_cap.max: 0  # Default is to disallow
         costs:
             monetary:
                 e_cap: 3200  # £/kW, 2016, medium, pre-dev + construction, {decc2013}
@@ -21,7 +21,7 @@ techs:
         color: '#C80065'
         parent: tidal
         constraints:
-            e_cap_max: 0  # Default is to disallow
+            e_cap.max: 0  # Default is to disallow
         costs:
             monetary:
                 e_cap: 3000  # £/kW, 2016, medium, pre-dev + construction, {decc2013}

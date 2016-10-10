@@ -6,7 +6,7 @@ techs:
         parent: supply_power_import
         constraints:
             r: inf
-            e_cap_max: 0
+            e_cap.max: 0
         costs:
             monetary:
                 om_var: 0.08  # £/kWh import cost, assumption based on range of pan-European wholesale price between ~40-60 EUR/MWh 2009-12 and an additional cost for transmission/operation
@@ -19,7 +19,7 @@ techs:
         constraints:
             r: inf
             force_r: false  # Can "supply" any amount of the infinite r, as long as within e_cap_max at a given location
-            e_cap_max: 0
+            e_cap.max: 0
         costs:
             monetary:
                 om_var: -0.01 # Assumed £/kWh revenue for export, which is ~25% of Pan-European wholesale price 2009-12
@@ -30,7 +30,7 @@ techs:
         per_distance: 1000
         constraints:
             r: inf
-            e_cap_max: 0
+            e_cap.max: 0
         costs:
             monetary:
                 om_var: 0.04  # £/kWh wholesale European power price 2009-12

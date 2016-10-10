@@ -11,7 +11,7 @@ override:
     techs:
         unmet_demand_power_supply:
             constraints:
-                e_cap_max: inf
+                e_cap.max: inf
     group_fraction:
         ignored_techs:
             capacity: ['hvdc_import', 'unmet_demand_power_supply']  # Count only capacity of the remaining techs without unmet_demand_power and imports

@@ -7,17 +7,17 @@ data_path: data
 techs:  # Scaling to MW makes definition of transmission techs a bit nicer
     hvac:
         constraints:
-            e_cap_max_scale: 1000  # MW to kW
+            e_cap_scale: 1000  # MW to kW
     demand_power:
         constraints:
             r: file=demand_r.csv
             r_scale: 1000  # To get from MWh to kWh
-    hydro_0.constraints.e_cap_max_scale: 1000  # MW to kW
-    pumped_storage_0.constraints.e_cap_max_scale: 1000  # MW to kW
+    hydro_0.constraints.e_cap_scale: 1000  # MW to kW
+    pumped_storage_0.constraints.e_cap_scale: 1000  # MW to kW
 
 constraints:
-    - constraints.ramping.ramping_rate
-    - constraints.group_fraction.group_fraction
+    - constraints.optional.ramping_rate
+    - constraints.optional.group_fraction
 
 system_margin:
     power: 0.1

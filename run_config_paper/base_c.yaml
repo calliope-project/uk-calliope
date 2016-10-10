@@ -12,7 +12,7 @@ override:
     techs:
         battery:
             constraints:
-                e_cap_max: inf
+                e_cap.max: inf
     group_fraction:
         capacity:
             supply_power_renewable: ['==', 0.90]

@@ -12,7 +12,7 @@ techs:
         color: '#FEF750'
         parent: pv
         constraints:
-            e_cap_max: 600000  # NB this is per region
+            e_cap.max: 600000  # NB this is per region
             r_eff: 0.16  # Assumption
         costs:
             monetary:
@@ -26,7 +26,7 @@ techs:
         color: '#C1BC3D'
         parent: pv
         constraints:
-            e_cap_max: 400000
+            e_cap.max: 400000
             r_eff: 0.18  # Assumption: 2 absolute percentage points higher than for rooftop
         costs:
             monetary:
@@ -48,7 +48,7 @@ techs:
         color: '#3272B2'
         parent: wind
         constraints:
-            e_cap_max: 22000000  # 22 GW per zone, see note [1]
+            e_cap.max: 22000000  # 22 GW per zone, see note [1]
         costs:
             monetary:
                 e_cap: 2505  # £/kW, 2020, medium, pre-dev + construction, {decc2013}
@@ -62,7 +62,7 @@ techs:
         color: '#6BA1D8'
         parent: wind
         constraints:
-            e_cap_max: 2000000  # 2GW per zone, but this is overriden on a per-zone basis by locations/locations_wind_pv_2015.yaml, so has no effect
+            e_cap.max: 2000000  # 2GW per zone, but this is overriden on a per-zone basis by locations/locations_wind_pv_2015.yaml, so has no effect
         costs:
             monetary:
                 e_cap: 1500  # £/kW, 2020, medium, pre-dev + construction, {decc2013}

@@ -1,9 +1,9 @@
 parallel:
     iterations:
-        - override.techs.csp_baseload.constraints.e_cap_max: 3000000
-        - override.techs.csp_baseload.constraints.e_cap_max: 7500000
-        - override.techs.csp_baseload.constraints.e_cap_max: 15000000
-        - override.techs.csp_baseload.constraints.e_cap_max: 30000000
-        - override.techs.csp_baseload.constraints.e_cap_max: 60000000
-        - override.techs.csp_baseload.constraints.e_cap_max: 90000000
-        - override.techs.csp_baseload.constraints.e_cap_max: 120000000
+        - override.techs.csp_baseload.constraints.e_cap.max: 3000000
+        - override.techs.csp_baseload.constraints.e_cap.max: 7500000
+        - override.techs.csp_baseload.constraints.e_cap.max: 15000000
+        - override.techs.csp_baseload.constraints.e_cap.max: 30000000
+        - override.techs.csp_baseload.constraints.e_cap.max: 60000000
+        - override.techs.csp_baseload.constraints.e_cap.max: 90000000
+        - override.techs.csp_baseload.constraints.e_cap.max: 120000000
