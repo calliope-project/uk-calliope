@@ -19,7 +19,7 @@ Simple run configuration files are in `run_config_simple`:
 * `run_planning.yaml`: Run model 1 in planning mode with 6-hourly timesteps
 * `run_op_2012.yaml`: Run 2012 power system in operational mode
 
-Run configuration files used for Pfenninger and Keirstead (2015) are in `run_config_paper`. For the paper, the model was run with [Calliope framework version 0.3.4](https://github.com/calliope-project/calliope/tree/v0.3.4).
+Run configuration files used for Pfenninger and Keirstead (2015) are in `run_config_paper`. For the paper, the model was run with [Calliope framework version 0.3.4](https://github.com/calliope-project/calliope/tree/v0.3.4) and [UK-Calliope revision b8a413f](https://github.com/sjpfenninger/uk-calliope/tree/b8a413f).
 
 ### Zones
 
