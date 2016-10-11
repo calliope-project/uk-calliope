@@ -10,10 +10,8 @@ locations:
                     e_cap.max: 526.28
             pumped_storage_0:
                 constraints:
-                    e_cap.max: 300.0
-                    e_cap_max_force: true
-                    s_cap_max: 6300000  # Foyers, {mackay2008_pumped}
-                    s_cap_max_force: true
+                    e_cap.equals: 300.0
+                    s_cap.equals: 6300000  # Foyers, {mackay2008_pumped}
     Z10:
         override:
             hydro_0:
@@ -21,8 +19,7 @@ locations:
                     e_cap.max: 0.0
             pumped_storage_0:
                 constraints:
-                    e_cap.max: 0.0
-                    e_cap_max_force: true
+                    e_cap.equals: 0.0
     Z11:
         override:
             hydro_0:
@@ -30,8 +27,7 @@ locations:
                     e_cap.max: 0.0
             pumped_storage_0:
                 constraints:
-                    e_cap.max: 0.0
-                    e_cap_max_force: true
+                    e_cap.equals: 0.0
     Z12:
         override:
             hydro_0:
@@ -39,8 +35,7 @@ locations:
                     e_cap.max: 0.0
             pumped_storage_0:
                 constraints:
-                    e_cap.max: 0.0
-                    e_cap_max_force: true
+                    e_cap.equals: 0.0
     Z13:
         override:
             hydro_0:
@@ -48,8 +43,7 @@ locations:
                     e_cap.max: 0.0
             pumped_storage_0:
                 constraints:
-                    e_cap.max: 0.0
-                    e_cap_max_force: true
+                    e_cap.equals: 0.0
     Z14:
         override:
             hydro_0:
@@ -57,8 +51,7 @@ locations:
                     e_cap.max: 0.0
             pumped_storage_0:
                 constraints:
-                    e_cap.max: 0.0
-                    e_cap_max_force: true
+                    e_cap.equals: 0.0
     Z15:
         override:
             hydro_0:
@@ -66,8 +59,7 @@ locations:
                     e_cap.max: 0.0
             pumped_storage_0:
                 constraints:
-                    e_cap.max: 0.0
-                    e_cap_max_force: true
+                    e_cap.equals: 0.0
     Z16:
         override:
             hydro_0:
@@ -75,8 +67,7 @@ locations:
                     e_cap.max: 0.0
             pumped_storage_0:
                 constraints:
-                    e_cap.max: 0.0
-                    e_cap_max_force: true
+                    e_cap.equals: 0.0
     Z17:
         override:
             hydro_0:
@@ -84,8 +75,7 @@ locations:
                     e_cap.max: 0.0
             pumped_storage_0:
                 constraints:
-                    e_cap.max: 0.0
-                    e_cap_max_force: true
+                    e_cap.equals: 0.0
     Z2:
         override:
             hydro_0:
@@ -93,8 +83,7 @@ locations:
                     e_cap.max: 0.0
             pumped_storage_0:
                 constraints:
-                    e_cap.max: 0.0
-                    e_cap_max_force: true
+                    e_cap.equals: 0.0
     Z3:
         override:
             hydro_0:
@@ -102,8 +91,7 @@ locations:
                     e_cap.max: 193.0
             pumped_storage_0:
                 constraints:
-                    e_cap.max: 0.0
-                    e_cap_max_force: true
+                    e_cap.equals: 0.0
     Z4:
         override:
             hydro_0:
@@ -111,10 +99,8 @@ locations:
                     e_cap.max: 344.0
             pumped_storage_0:
                 constraints:
-                    e_cap.max: 440.0
-                    e_cap_max_force: true
-                    s_cap_max: 10000000  # Cruachan, {mackay2008_pumped}
-                    s_cap_max_force: true
+                    e_cap.equals: 440.0
+                    s_cap.equals: 10000000  # Cruachan, {mackay2008_pumped}
     Z5:
         override:
             hydro_0:
@@ -122,17 +108,15 @@ locations:
                     e_cap.max: 0.0
             pumped_storage_0:
                 constraints:
-                    e_cap.max: 0.0
-                    e_cap_max_force: true
+                    e_cap.equals: 0.0
     Z6:
         override:
             hydro_0:
                 constraints:
-                    e_cap.max: 33.0
+                    e_cap.equals: 33.0
             pumped_storage_0:
                 constraints:
-                    e_cap.max: 0.0
-                    e_cap_max_force: true
+                    e_cap.equals: 0.0
     Z7:
         override:
             hydro_0:
@@ -140,8 +124,7 @@ locations:
                     e_cap.max: 0.0
             pumped_storage_0:
                 constraints:
-                    e_cap.max: 0.0
-                    e_cap_max_force: true
+                    e_cap.equals: 0.0
     Z8:
         override:
             hydro_0:
@@ -149,8 +132,7 @@ locations:
                     e_cap.max: 0.0
             pumped_storage_0:
                 constraints:
-                    e_cap.max: 0.0
-                    e_cap_max_force: true
+                    e_cap.equals: 0.0
     Z9:
         override:
             hydro_0:
@@ -158,7 +140,5 @@ locations:
                     e_cap.max: 0.0
             pumped_storage_0:
                 constraints:
-                    e_cap.max: 2004.0
-                    e_cap_max_force: true
-                    s_cap_max: 10400000  # Dinorwig + Ffestiniog, {mackay2008_pumped}
-                    s_cap_max_force: true
+                    e_cap.equals: 2004.0
+                    s_cap.equals: 10400000  # Dinorwig + Ffestiniog, {mackay2008_pumped}

@@ -7,17 +7,14 @@ locations:
         override:
             hvdc_import:
                 constraints:
-                    e_cap.max: 3000000  # 2000 MW to France, 1000 MW to BritNed, {netssys2011} Table F-13
-                    e_cap_max_force: true
+                    e_cap.equals: 3000000  # 2000 MW to France, 1000 MW to BritNed, {netssys2011} Table F-13
     Z9:
         override:
             hvdc_export:
                 constraints:
-                    e_cap.max: 500000  # 500 MW to Ireland, {netssys2011} Table F-13
-                    e_cap_max_force: true
+                    e_cap.equals: 500000  # 500 MW to Ireland, {netssys2011} Table F-13
     Z6:
         override:
             hvdc_export:
                 constraints:
-                    e_cap.max: 250000  # 500 MW to Ireland, {netssys2011} Table F-13
-                    e_cap_max_force: true
+                    e_cap.equals: 250000  # 500 MW to Ireland, {netssys2011} Table F-13

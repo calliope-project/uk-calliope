@@ -6,161 +6,134 @@ links:
         hvac:
             distance: 300
             constraints:
-                e_cap.max: 50  # in reality, is 0
-                e_cap_max_force: true
+                e_cap.equals: 50  # in reality, is 0
     Z1_4,Z1_2:
         hvac:
             distance: 160
             constraints:
-                e_cap.max: 50  # in reality, is 19
-                e_cap_max_force: true
+                e_cap.equals: 50  # in reality, is 19
     Z1_4,Z1_3:
         hvac:
             distance: 110
             constraints:
-                e_cap.max: 500  # in reality, is 117
-                e_cap_max_force: true
+                e_cap.equals: 500  # in reality, is 117
     Z2,Z1_4:
         hvac:
             distance: 100
             constraints:
-                e_cap.max: 755
-                e_cap_max_force: true
+                e_cap.equals: 755
     Z3,Z2:
         hvac:
             distance: 100
             constraints:
-                e_cap.max: 1342
-                e_cap_max_force: true
+                e_cap.equals: 1342
     Z4,Z3:
         hvac:
             distance: 100
             constraints:
-                e_cap.max: 5000
-                e_cap_max_force: true
+                e_cap.equals: 5000
     Z5,Z3:
         hvac:
             distance: 75
             constraints:
-                e_cap.max: 1752
-                e_cap_max_force: true
+                e_cap.equals: 1752
     Z6,Z5:
         hvac:
             distance: 60
             constraints:
-                e_cap.max: 3343
-                e_cap_max_force: true
+                e_cap.equals: 3343
     Z7,Z6:
         hvac:
             distance: 100
             constraints:
-                e_cap.max: 3313
-                e_cap_max_force: true
+                e_cap.equals: 3313
     Z8,Z7:
         hvac:
             distance: 100
             constraints:
-                e_cap.max: 1112
-                e_cap_max_force: true
+                e_cap.equals: 1112
     Z9,Z7:
         hvac:
             distance: 100
             constraints:
-                e_cap.max: 1226
-                e_cap_max_force: true
+                e_cap.equals: 1226
     Z9,Z8:
         hvac:
             distance: 150
             constraints:
-                e_cap.max: 1275
-                e_cap_max_force: true
+                e_cap.equals: 1275
     Z10,Z8:
         hvac:
             distance: 50
             constraints:
-                e_cap.max: 5000
-                e_cap_max_force: true
+                e_cap.equals: 5000
     Z11,Z9:
         hvac:
             distance: 100
             constraints:
-                e_cap.max: 3367
-                e_cap_max_force: true
+                e_cap.equals: 3367
     Z11,Z10:
         hvac:
             distance: 100
             constraints:
-                e_cap.max: 3684
-                e_cap_max_force: true
+                e_cap.equals: 3684
     Z12,Z10:
         hvac:
             distance: 125
             constraints:
-                e_cap.max: 4621
-                e_cap_max_force: true
+                e_cap.equals: 4621
     Z12,Z11:
         hvac:
             distance: 150
             constraints:
-                e_cap.max: 3238
-                e_cap_max_force: true
+                e_cap.equals: 3238
     Z13,Z11:
         hvac:
             distance: 125
             constraints:
-                e_cap.max: 896
-                e_cap_max_force: true
+                e_cap.equals: 896
     Z13,Z12:
         hvac:
             distance: 300
             constraints:
-                e_cap.max: 844
-                e_cap_max_force: true
+                e_cap.equals: 844
     Z14,Z12:
         hvac:
             distance: 50
             constraints:
-                e_cap.max: 5000
-                e_cap_max_force: true
+                e_cap.equals: 5000
     Z15,Z12:
         hvac:
             distance: 150
             constraints:
-                e_cap.max: 1453
-                e_cap_max_force: true
+                e_cap.equals: 1453
     Z15,Z14:
         hvac:
             distance: 50
             constraints:
-                e_cap.max: 5000
-                e_cap_max_force: true
+                e_cap.equals: 5000
     Z16,Z13:
         hvac:
             distance: 200
             constraints:
-                e_cap.max: 2559
-                e_cap_max_force: true
+                e_cap.equals: 2559
     Z16,Z14:
         hvac:
             distance: 50
             constraints:
-                e_cap.max: 5000
-                e_cap_max_force: true
+                e_cap.equals: 5000
     Z16,Z15:
         hvac:
             distance: 100
             constraints:
-                e_cap.max: 1467
-                e_cap_max_force: true
+                e_cap.equals: 1467
     Z17,Z13:
         hvac:
             distance: 200
             constraints:
-                e_cap.max: 590
-                e_cap_max_force: true
+                e_cap.equals: 590
     Z17,Z16:
         hvac:
             distance: 300
             constraints:
-                e_cap.max: 302
-                e_cap_max_force: true
+                e_cap.equals: 302

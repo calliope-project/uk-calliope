@@ -7,11 +7,9 @@ locations:
         override:
             hvdc_import:
                 constraints:
-                    e_cap.max: 3000000  # 2000 MW FR, 1000 MW NL
-                    e_cap_max_force: true
+                    e_cap.equals: 3000000  # 2000 MW FR, 1000 MW NL
     Z17:
         override:
             hvdc_import:
                 constraints:
-                    e_cap.max: 2000000  # 2000 MW Assumption
-                    e_cap_max_force: true
+                    e_cap.equals: 2000000  # 2000 MW Assumption

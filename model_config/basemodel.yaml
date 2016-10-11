@@ -2,6 +2,8 @@ import:
     - metadata.yaml
     - locations/locations_wind_pv_2050.yaml
 
+name: UK-Calliope
+
 data_path: data
 
 techs:  # Scaling to MW makes definition of transmission techs a bit nicer

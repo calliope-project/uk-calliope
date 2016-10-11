@@ -3,119 +3,99 @@ locations:
         override:
             pv_csi_rooftop:
                 constraints:
-                    e_cap.max: 123.4
-                    e_cap_max_force: true
+                    e_cap.equals: 123.4
     Z1_2:
         override:
             pv_csi_rooftop:
                 constraints:
-                    e_cap.max: 568.43
-                    e_cap_max_force: true
+                    e_cap.equals: 568.43
     Z1_3:
         override:
             pv_csi_rooftop:
                 constraints:
-                    e_cap.max: 11137.125
-                    e_cap_max_force: true
+                    e_cap.equals: 11137.125
     Z1_4:
         override:
             pv_csi_rooftop:
                 constraints:
-                    e_cap.max: 0.0
-                    e_cap_max_force: true
+                    e_cap.equals: 0.0
     Z10:
         override:
             pv_csi_rooftop:
                 constraints:
-                    e_cap.max: 81009.155
-                    e_cap_max_force: true
+                    e_cap.equals: 81009.155
     Z11:
         override:
             pv_csi_rooftop:
                 constraints:
-                    e_cap.max: 257492.218
-                    e_cap_max_force: true
+                    e_cap.equals: 257492.218
     Z12:
         override:
             pv_csi_rooftop:
                 constraints:
-                    e_cap.max: 222722.402
-                    e_cap_max_force: true
+                    e_cap.equals: 222722.402
     Z13:
         override:
             pv_csi_rooftop:
                 constraints:
-                    e_cap.max: 293998.218
-                    e_cap_max_force: true
+                    e_cap.equals: 293998.218
     Z14:
         override:
             pv_csi_rooftop:
                 constraints:
-                    e_cap.max: 88065.853
-                    e_cap_max_force: true
+                    e_cap.equals: 88065.853
     Z15:
         override:
             pv_csi_rooftop:
                 constraints:
-                    e_cap.max: 55400.625
-                    e_cap_max_force: true
+                    e_cap.equals: 55400.625
     Z16:
         override:
             pv_csi_rooftop:
                 constraints:
-                    e_cap.max: 169249.534
-                    e_cap_max_force: true
+                    e_cap.equals: 169249.534
     Z17:
         override:
             pv_csi_rooftop:
                 constraints:
-                    e_cap.max: 322594.299
-                    e_cap_max_force: true
+                    e_cap.equals: 322594.299
     Z2:
         override:
             pv_csi_rooftop:
                 constraints:
-                    e_cap.max: 18762.104
-                    e_cap_max_force: true
+                    e_cap.equals: 18762.104
     Z3:
         override:
             pv_csi_rooftop:
                 constraints:
-                    e_cap.max: 27149.835
-                    e_cap_max_force: true
+                    e_cap.equals: 27149.835
     Z4:
         override:
             pv_csi_rooftop:
                 constraints:
-                    e_cap.max: 3027.142
-                    e_cap_max_force: true
+                    e_cap.equals: 3027.142
     Z5:
         override:
             pv_csi_rooftop:
                 constraints:
-                    e_cap.max: 37749.341
-                    e_cap_max_force: true
+                    e_cap.equals: 37749.341
     Z6:
         override:
             pv_csi_rooftop:
                 constraints:
-                    e_cap.max: 15327.7
-                    e_cap_max_force: true
+                    e_cap.equals: 15327.7
     Z7:
         override:
             pv_csi_rooftop:
                 constraints:
-                    e_cap.max: 83774.835
-                    e_cap_max_force: true
+                    e_cap.equals: 83774.835
     Z8:
         override:
             pv_csi_rooftop:
                 constraints:
-                    e_cap.max: 184441.429
-                    e_cap_max_force: true
+                    e_cap.equals: 184441.429
     Z9:
         override:
             pv_csi_rooftop:
                 constraints:
-                    e_cap.max: 175264.466
-                    e_cap_max_force: true
+                    e_cap.equals: 175264.466
