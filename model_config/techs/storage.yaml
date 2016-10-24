@@ -8,7 +8,7 @@ techs:
         name: Electric vehicles
         parent: storage_power
         constraints:
-            s_cap_max: inf
+            s_cap.max: inf
             # e_cap.max: inf  # defined in model settings, zero by default
             e_eff: 0.9  # 0.81 round-trip, {budischak2013}
             s_loss: 8.33e-05
@@ -24,7 +24,7 @@ techs:
         name: Hydrogen power storage
         parent: storage_power
         constraints:
-            s_cap_max: inf
+            s_cap.max: inf
             # e_cap.max: inf  # defined in model settings, zero by default
             e_eff: 0.66  # 0.438 round-trip, {budischak2013}
             s_loss: 1.50e-08
@@ -41,7 +41,7 @@ techs:
         name: Grid-scale batteries
         parent: storage_power
         constraints:
-            s_cap_max: inf
+            s_cap.max: inf
             # e_cap.max: inf  # defined in model settings, zero by default
             e_eff: 0.9  # 0.81 round-trip, {budischak2013}
             s_loss: 8.33e-05

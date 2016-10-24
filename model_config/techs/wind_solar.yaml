@@ -38,7 +38,7 @@ techs:
         group: true
         parent: supply_power_renewable
         constraints:  # Wind uses r_area to capture energy, with r_area being treated as installed capacity in kW, and r being the hourly availability, such that r_avail becomes produced electricity.
-            r_area_max: inf
+            r_area.max: inf
             r_area_per_e_cap: 1.0  # r_area serves as e_cap
             r_cap_equals_e_cap: true
             r: file

@@ -11,7 +11,7 @@ locations:
             pumped_storage_0:
                 constraints:
                     e_cap.equals: 300.0
-                    s_cap_max.equals: 6300000  # Foyers, {mackay2008_pumped}
+                    s_cap.equals: 6300000  # Foyers, {mackay2008_pumped}
     Z10:
         override:
             hydro_0:

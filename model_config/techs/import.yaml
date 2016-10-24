@@ -18,7 +18,7 @@ techs:
         carrier: power
         constraints:
             r: inf
-            force_r: false  # Can "supply" any amount of the infinite r, as long as within e_cap_max at a given location
+            force_r: false  # Can "supply" any amount of the infinite r, as long as within e_cap.max at a given location
             e_cap.max: 0
         costs:
             monetary:
