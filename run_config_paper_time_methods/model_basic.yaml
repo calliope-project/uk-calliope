@@ -1,0 +1,5 @@
+model:
+    - ../model_config_paper_time_methods/model.yaml
+    - ../model_config_paper_time_methods/locations/transmission_grid_current.yaml
+
+mode: plan

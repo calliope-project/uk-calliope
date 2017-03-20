@@ -1,0 +1,49 @@
+import:
+    - cluster_environment.yaml
+    - model_basic.yaml
+
+solver_options: {Method: -1, Threads: 3}
+
+parallel:
+    resources:
+        threads: 3
+        wall_time: 4320
+        memory: 66000  # MB per thread
+
+    iterations:
+        - name: "Years: 2"
+          time: {}
+          subset_t: ['2013-01-01', '2014-12-31']
+          override.techs.demand_power.constraints.r: file=demand_r_2014.csv
+        - name: "Years: 3"
+          time: {}
+          subset_t: ['2012-01-01', '2014-12-31']
+          override.techs.demand_power.constraints.r: file=demand_r_2014.csv
+        - name: "Years: 4"
+          time: {}
+          subset_t: ['2011-01-01', '2014-12-31']
+          override.techs.demand_power.constraints.r: file=demand_r_2014.csv
+        - name: "Years: 5"
+          time: {}
+          subset_t: ['2010-01-01', '2014-12-31']
+          override.techs.demand_power.constraints.r: file=demand_r_2014.csv
+        - name: "Years: 6"
+          time: {}
+          subset_t: ['2009-01-01', '2014-12-31']
+          override.techs.demand_power.constraints.r: file=demand_r_2014.csv
+        - name: "Years: 7"
+          time: {}
+          subset_t: ['2008-01-01', '2014-12-31']
+          override.techs.demand_power.constraints.r: file=demand_r_2014.csv
+        - name: "Years: 8"
+          time: {}
+          subset_t: ['2007-01-01', '2014-12-31']
+          override.techs.demand_power.constraints.r: file=demand_r_2014.csv
+        - name: "Years: 9"
+          time: {}
+          subset_t: ['2006-01-01', '2014-12-31']
+          override.techs.demand_power.constraints.r: file=demand_r_2014.csv
+        - name: "Years: 10"
+          time: {}
+          subset_t: ['2005-01-01', '2014-12-31']
+          override.techs.demand_power.constraints.r: file=demand_r_2014.csv

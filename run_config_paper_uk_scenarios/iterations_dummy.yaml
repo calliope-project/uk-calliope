@@ -1,0 +1,3 @@
+parallel:
+    iterations:
+        - foo: 'bar'  # Dummy, only one "iteration"

@@ -1,0 +1,25 @@
+import:
+    - techs/basics.yaml
+    - techs/renewables.yaml
+    - techs/storage.yaml
+    - techs/transmission.yaml
+
+techs:
+    supply_power:
+        parent: supply
+        carrier: power
+    supply_power_renewable:
+        parent: supply_power
+    supply_power_nonrenewable:
+        parent: supply_power
+    demand_power:
+        name: 'Power demand'
+        parent: demand
+        carrier: power
+    unmet_demand_power:
+        name: 'Unmet Power Demand'
+        parent: unmet_demand
+        carrier: power
+    storage_power:
+        parent: storage
+        carrier: power

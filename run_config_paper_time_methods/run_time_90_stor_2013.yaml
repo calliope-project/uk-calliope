@@ -1,0 +1,7 @@
+import:
+    - ren_90_stor.yaml
+    - setup_time.yaml
+
+subset_t: ['2013-01-01', '2013-12-31']
+
+parallel.name: calliope_time_90_stor_2013

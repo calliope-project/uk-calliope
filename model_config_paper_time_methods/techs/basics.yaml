@@ -1,0 +1,42 @@
+techs:
+    baseload:
+        stack_weight: 500
+        name: Fossil baseload
+        color: '#3F3F3F'
+        parent: supply_power_nonrenewable
+        constraints:
+            r: inf
+            e_ramping: 0.6  # Assume about 1% per minute times 60 minutes, based on {mit2011}
+            e_eff:  0.44  # Coal ASC with FGD medium nth o.a.k., {parsons2011}
+            e_cap_min_use: 0.5  # Assumption, only tech with min_use
+        costs:
+            monetary:
+                e_cap: 1642.7  # £/kWh, Coal ASC with FGD medium nth o.a.k., {parsons2011}
+                om_var: 0.001  # £/kWh, Coal ASC with FGD medium nth o.a.k., {parsons2011}
+                om_fixed: 35  # £/kW/yr, Coal ASC with FGD medium nth o.a.k., {parsons2011}
+                om_fuel:  0.0077  # £/kWh net, medium, Table 6.3, {mott2010} (with 1 GJ = 277.777 kWh)
+    dispatch:
+        stack_weight: 200
+        name: Fossil dispatchable
+        color: '#FDC97D'
+        parent: supply_power_nonrenewable
+        constraints:
+            r: inf
+            e_eff:  0.58  # CCGT medium nth of a kind, {parsons2011}
+        costs:
+            monetary:
+                e_cap: 668.9  # £/kW, CCGT medium nth of a kind, {parsons2011}
+                om_var: 0.0001  # £/kWh, CCGT medium nth of a kind, {parsons2011}
+                om_fixed: 23.182  # £/kW/yr, CCGT medium nth of a kind, {parsons2011}
+                om_fuel: 0.0265  # £/kWh net, medium, Table 6.3, {mott2010} (with 1 GJ = 277.777 kWh)
+    hvdc_import:  # Generic HVDC import technology
+        stack_weight: 10
+        name: HVDC import
+        color: '#E68A31'
+        parent: supply_power_nonrenewable
+        constraints:
+            r: inf
+            e_cap.max: 0
+        costs:
+            monetary:
+                om_var: 0.08  # £/kWh import cost, assumption based on range of pan-European wholesale price between ~40-60 EUR/MWh 2009-12 and an additional cost for transmission/operation

@@ -1,0 +1,51 @@
+techs:
+    pv:  # Fixed angle rooftop installations
+        parent: supply_power_renewable
+        stack_weight: 40
+        name: PV
+        color: '#FEF750'
+        constraints:
+            r_area.max: inf
+            r_area_per_e_cap: 1.0  # r_area serves as e_cap
+            e_cap.max: 600000  # per region
+        costs:
+            monetary:
+                e_cap: 1600  # £/kW, 2020, medium, {decc2013}
+                om_fixed: 23.5  # £/kW/yr, 2020, medium, {decc2013}
+    wind:
+        group: true
+        parent: supply_power_renewable
+        constraints:
+            r_area.max: inf
+            r_area_per_e_cap: 1.0  # r_area serves as e_cap
+    wind_offshore:  # Using round 2 data from {decc2013}
+        stack_weight: 70
+        name: Offshore wind
+        color: '#3272B2'
+        parent: wind
+        constraints:
+            e_cap.max: 22000000  # 22 GW per zone, see bottom of file [1]
+        costs:
+            monetary:
+                e_cap: 2505  # £/kW, 2020, medium, pre-dev + construction, {decc2013}
+                om_fixed: 133.70  # £/kW/yr, 2020, inc. insurance+system charges, medium, {decc2013}
+                om_var: 0.005  # £/kWh, 2020, medium, from onshore wind {decc2013}
+    wind_onshore:
+        stack_weight: 60
+        name: Onshore wind
+        color: '#6BA1D8'
+        parent: wind
+        constraints:
+            e_cap.max: 2000000  # See note [2]
+        costs:
+            monetary:
+                # Costs based on round 3
+                e_cap: 1500  # £/kW, 2020, medium, pre-dev + construction, {decc2013}
+                om_fixed: 44.71  # £/kW/yr, 2020, inc. insurance+system charges, medium, {decc2013}
+                om_var: 0.005  # £/kWh, 2020, medium, {decc2013}
+
+# Notes
+#
+# [1] According to SEWTHA. 16 kWh/d shallow with 44000 3MW turbines = 132 GW, 32 kWh/d deep, so another 264 GW, for total of 396 GW. Assume this is spread evenly between all zones that can have offshore wind, which is all but 2, so that is 18 zones, so 396 / 18 = 22 GW per zone.
+#
+# [2] According to SEWTHA. 20 kWh/d onshore wind, so assuming same tech performance as for offshore, that is 165 GW, in all but one zone (London), so 8 GW per zone. Let's assume that only a fourth of that is viable, so 2 GW per zone.

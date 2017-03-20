@@ -1,0 +1,7 @@
+time:
+    masks:
+        - {function: week, options: {day_func: 'extreme_diff', tech0: 'demand_power', tech1: 'wind_offshore', how: 'min'}}
+    function: resample
+    function_options: {'resolution': '24H'}
+
+mode: plan

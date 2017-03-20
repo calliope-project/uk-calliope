@@ -1,0 +1,38 @@
+import:
+    - techs.yaml
+    - locations.yaml
+    - locations/locations_fixed.yaml
+    - locations/locations_wind_pv.yaml
+    - metadata.yaml
+
+name: UK-Calliope-LT
+
+data_path: data
+
+constraints:
+    - constraints.optional.group_fraction
+
+system_margin:
+    power: 0.1
+
+locations:  # See locations.yaml and locations/* for region-specific tech constraints
+    Z1_1,Z1_2,Z1_3,Z1_4,Z2,Z3,Z4,Z5,Z6,Z7,Z8,Z9,Z10,Z11,Z12,Z13,Z14,Z15,Z16,Z17:
+        techs: ['demand_power', 'unmet_demand_power',
+                'dispatch', 'baseload', 'pumped_storage',
+                'wind_offshore', 'wind_onshore', 'pv',
+                'hvdc_import', 'battery']
+
+techs:
+    demand_power:
+        constraints:
+            r: file=demand_r.csv
+            r_scale: 1000  # MWh to kWh
+    pv:
+        constraints:
+            r: file=pv_merra_corrected.csv
+    wind_onshore:
+        constraints:
+            r: file=wind_onshore_corrected.csv
+    wind_offshore:
+        constraints:
+            r: file=wind_offshore_corrected.csv

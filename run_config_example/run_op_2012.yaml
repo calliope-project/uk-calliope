@@ -1,0 +1,5 @@
+model: ../model_config_paper_uk_scenarios/model_op_2012.yaml
+
+mode: operate
+
+solver: gurobi

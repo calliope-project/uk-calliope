@@ -1,0 +1,9 @@
+locations:
+    Z1_1,Z1_2,Z1_3,Z1_4,Z2,Z3,Z4,Z5,Z6,Z7,Z8,Z9,Z10,Z11,Z12,Z13,Z15,Z16,Z17:
+        override:
+            dispatch.constraints.e_cap.max: inf
+            baseload.constraints.e_cap.max: inf
+    Z14:  # London
+        override:
+            dispatch.constraints.e_cap.max: 500000  # no more than 500MW
+            baseload.constraints.e_cap.max: 0

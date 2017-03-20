@@ -1,0 +1,29 @@
+name: paper_calliope_time
+
+channels:
+    - conda-forge
+    - defaults
+
+dependencies:
+    - click=6.6=py35_0
+    - conda-forge::calliope=0.4.0=0
+    - conda-forge::bottleneck=1.2.0=np111py35_0
+    - conda-forge::cloudpickle=0.2.1=py35_2
+    - conda-forge::pandas=0.19.1=np111py35_0
+    - conda-forge::pyomo=5.0.1=py35_0
+    - conda-forge::pyutilib=5.4.1=py35_0
+    - conda-forge::xarray=0.8.2=py35_0
+    - hdf5=1.8.15.1=2
+    - libnetcdf=4.3.3.1=3
+    - matplotlib=1.5.1=np111py35_0
+    - netcdf4=1.2.2=np111py35_0
+    - networkx=1.11=py35_0
+    - numexpr=2.5.2=np111py35_1
+    - numpy=1.11.0=py35_1
+    - python=3.5.1=0
+    - python-dateutil=2.5.2=py35_0
+    - pytz=2016.3=py35_0
+    - pyyaml=3.11=py35_1
+    - scipy=0.17.0=np111py35_4
+    - seaborn=0.7.0=py35_0
+    - yaml=0.1.6=0

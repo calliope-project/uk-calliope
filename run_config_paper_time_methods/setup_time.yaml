@@ -1,0 +1,272 @@
+import:
+    - cluster_environment.yaml
+    - model_basic.yaml
+
+solver_options: {Method: 2, Threads: 1}
+
+parallel:
+    resources:
+        threads: 1
+        wall_time: 480
+        memory: 20000  # 20 GB
+
+    iterations:
+        ##
+        # simple resolution adjustment
+        ##
+        - name: "24h timesteps"
+          time: {function: resample, function_options: {'resolution': '1D'}}
+        - name: "12h timesteps"
+          time: {function: resample, function_options: {'resolution': '12H'}}
+        - name: "6h timesteps"
+          time: {function: resample, function_options: {'resolution': '6H'}}
+          parallel.resources.memory: 40000
+        - name: "3h timesteps"
+          time: {function: resample, function_options: {'resolution': '3H'}}
+          parallel.resources.memory: 50000
+        # one-hourly run is done in `years` and `time_reference`
+        - name: "1h timesteps"
+          time: None  # native resolution 1h already
+          parallel.resources.wall_time: 480
+          parallel.resources.memory: 120000  # MB per thread
+
+        ##
+        # clustering
+        ##
+
+        # k-means
+        - name: "k-means - 5 days - mean"
+          time: {function: apply_clustering, function_options: {clustering_func: 'get_clusters_kmeans', how: 'mean', k: 5}}
+        - name: "k-means - 10 days - mean"
+          time: {function: apply_clustering, function_options: {clustering_func: 'get_clusters_kmeans', how: 'mean', k: 10}}
+        - name: "k-means - 15 days - mean"
+          time: {function: apply_clustering, function_options: {clustering_func: 'get_clusters_kmeans', how: 'mean', k: 15}}
+        - name: "k-means - 20 days - mean"
+          time: {function: apply_clustering, function_options: {clustering_func: 'get_clusters_kmeans', how: 'mean', k: 20}}
+        - name: "k-means - 5 days - closest"
+          time: {function: apply_clustering, function_options: {clustering_func: 'get_clusters_kmeans', how: 'closest', k: 5}}
+        - name: "k-means - 10 days - closest"
+          time: {function: apply_clustering, function_options: {clustering_func: 'get_clusters_kmeans', how: 'closest', k: 10}}
+        - name: "k-means - 15 days - closest"
+          time: {function: apply_clustering, function_options: {clustering_func: 'get_clusters_kmeans', how: 'closest', k: 15}}
+        - name: "k-means - 20 days - closest"
+          time: {function: apply_clustering, function_options: {clustering_func: 'get_clusters_kmeans', how: 'closest', k: 20}}
+        # k-means for a single technology
+        - name: "k-means - wind_offshore - 5 days - mean"
+          time: {function: apply_clustering, function_options: {clustering_func: 'get_clusters_kmeans', tech: 'wind_offshore', how: 'mean', k: 5}}
+        - name: "k-means - wind_offshore - 10 days - mean"
+          time: {function: apply_clustering, function_options: {clustering_func: 'get_clusters_kmeans', tech: 'wind_offshore', how: 'mean', k: 10}}
+        - name: "k-means - wind_offshore - 15 days - mean"
+          time: {function: apply_clustering, function_options: {clustering_func: 'get_clusters_kmeans', tech: 'wind_offshore', how: 'mean', k: 15}}
+        - name: "k-means - wind_offshore - 5 days - closest"
+          time: {function: apply_clustering, function_options: {clustering_func: 'get_clusters_kmeans', tech: 'wind_offshore', how: 'mean', k: 5}}
+        - name: "k-means - wind_offshore - 10 days - closest"
+          time: {function: apply_clustering, function_options: {clustering_func: 'get_clusters_kmeans', tech: 'wind_offshore', how: 'mean', k: 10}}
+        - name: "k-means - wind_offshore - 15 days - closest"
+          time: {function: apply_clustering, function_options: {clustering_func: 'get_clusters_kmeans', tech: 'wind_offshore', how: 'mean', k: 15}}
+
+        # hierarchical
+        - name: "hierarchical - 5 days - mean"
+          time: {function: apply_clustering, function_options: {clustering_func: 'get_clusters_hierarchical', how: 'mean', k: 5}}
+        - name: "hierarchical - 10 days - mean"
+          time: {function: apply_clustering, function_options: {clustering_func: 'get_clusters_hierarchical', how: 'mean', k: 10}}
+        - name: "hierarchical - 15 days - mean"
+          time: {function: apply_clustering, function_options: {clustering_func: 'get_clusters_hierarchical', how: 'mean', k: 15}}
+        - name: "hierarchical - 20 days - mean"
+          time: {function: apply_clustering, function_options: {clustering_func: 'get_clusters_hierarchical', how: 'mean', k: 20}}
+        - name: "hierarchical - 5 days - closest"
+          time: {function: apply_clustering, function_options: {clustering_func: 'get_clusters_hierarchical', how: 'closest', k: 5}}
+        - name: "hierarchical - 10 days - closest"
+          time: {function: apply_clustering, function_options: {clustering_func: 'get_clusters_hierarchical', how: 'closest', k: 10}}
+        - name: "hierarchical - 15 days - closest"
+          time: {function: apply_clustering, function_options: {clustering_func: 'get_clusters_hierarchical', how: 'closest', k: 15}}
+        - name: "hierarchical - 20 days - closest"
+          time: {function: apply_clustering, function_options: {clustering_func: 'get_clusters_hierarchical', how: 'closest', k: 20}}
+
+
+        ##
+        # selected days
+        ##
+
+        # selected days -- drop rest
+        - name: "min/max solar and wind days - drop"
+          time:
+              masks:
+                  - {function: extreme, options: {tech: demand_power, how: min}}
+                  - {function: extreme, options: {tech: demand_power, how: max}}
+                  - {function: extreme, options: {tech: wind_offshore, how: min}}
+                  - {function: extreme, options: {tech: wind_offshore, how: max}}
+                  - {function: extreme, options: {tech: pv, how: min}}
+                  - {function: extreme, options: {tech: pv, how: max}}
+              function: drop
+
+        # selected days -- downsample rest
+        - name: "min/max solar and wind days - downsample 6h"
+          time:
+              masks:
+                  - {function: extreme, options: {tech: demand_power, how: min}}
+                  - {function: extreme, options: {tech: demand_power, how: max}}
+                  - {function: extreme, options: {tech: wind_offshore, how: min}}
+                  - {function: extreme, options: {tech: wind_offshore, how: max}}
+                  - {function: extreme, options: {tech: pv, how: min}}
+                  - {function: extreme, options: {tech: pv, how: max}}
+              function: resample
+              function_options: {'resolution': '6H'}
+          parallel.resources.wall_time: 1440
+          parallel.resources.memory: 60000
+        - name: "min/max solar and wind days - downsample 12h"
+          time:
+              masks:
+                  - {function: extreme, options: {tech: demand_power, how: min}}
+                  - {function: extreme, options: {tech: demand_power, how: max}}
+                  - {function: extreme, options: {tech: wind_offshore, how: min}}
+                  - {function: extreme, options: {tech: wind_offshore, how: max}}
+                  - {function: extreme, options: {tech: pv, how: min}}
+                  - {function: extreme, options: {tech: pv, how: max}}
+              function: resample
+              function_options: {'resolution': '12H'}
+        - name: "min/max solar and wind days - downsample 1D"
+          time:
+              masks:
+                  - {function: extreme, options: {tech: demand_power, how: min}}
+                  - {function: extreme, options: {tech: demand_power, how: max}}
+                  - {function: extreme, options: {tech: wind_offshore, how: min}}
+                  - {function: extreme, options: {tech: wind_offshore, how: max}}
+                  - {function: extreme, options: {tech: pv, how: min}}
+                  - {function: extreme, options: {tech: pv, how: max}}
+              function: resample
+              function_options: {'resolution': '1D'}
+
+        # selected days -- cluster rest
+        - name: "min/max solar and wind days - kmeans - 10 days - closest"
+          time:
+              masks:
+                  - {function: extreme, options: {tech: demand_power, how: min}}
+                  - {function: extreme, options: {tech: demand_power, how: max}}
+                  - {function: extreme, options: {tech: wind_offshore, how: min}}
+                  - {function: extreme, options: {tech: wind_offshore, how: max}}
+                  - {function: extreme, options: {tech: pv, how: min}}
+                  - {function: extreme, options: {tech: pv, how: max}}
+              function: apply_clustering
+              function_options: {clustering_func: 'get_clusters_kmeans', how: 'closest', k: 10}
+        - name: "min/max solar and wind days - hierarchical - 10 days - closest"
+          time:
+              masks:
+                  - {function: extreme, options: {tech: demand_power, how: min}}
+                  - {function: extreme, options: {tech: demand_power, how: max}}
+                  - {function: extreme, options: {tech: wind_offshore, how: min}}
+                  - {function: extreme, options: {tech: wind_offshore, how: max}}
+                  - {function: extreme, options: {tech: pv, how: min}}
+                  - {function: extreme, options: {tech: pv, how: max}}
+              function: apply_clustering
+              function_options: {clustering_func: 'get_clusters_hierarchical', how: 'closest', k: 10}
+        - name: "min/max solar and wind days - kmeans - 10 days - mean"
+          time:
+              masks:
+                  - {function: extreme, options: {tech: demand_power, how: min}}
+                  - {function: extreme, options: {tech: demand_power, how: max}}
+                  - {function: extreme, options: {tech: wind_offshore, how: min}}
+                  - {function: extreme, options: {tech: wind_offshore, how: max}}
+                  - {function: extreme, options: {tech: pv, how: min}}
+                  - {function: extreme, options: {tech: pv, how: max}}
+              function: apply_clustering
+              function_options: {clustering_func: 'get_clusters_kmeans', how: 'mean', k: 10}
+        - name: "min/max solar and wind days - hierarchical - 10 days - mean"
+          time:
+              masks:
+                  - {function: extreme, options: {tech: demand_power, how: min}}
+                  - {function: extreme, options: {tech: demand_power, how: max}}
+                  - {function: extreme, options: {tech: wind_offshore, how: min}}
+                  - {function: extreme, options: {tech: wind_offshore, how: max}}
+                  - {function: extreme, options: {tech: pv, how: min}}
+                  - {function: extreme, options: {tech: pv, how: max}}
+              function: apply_clustering
+              function_options: {clustering_func: 'get_clusters_hierarchical', how: 'mean', k: 10}
+        - name: "min/max solar and wind days - kmeans - 5 days - closest"
+          time:
+              masks:
+                  - {function: extreme, options: {tech: demand_power, how: min}}
+                  - {function: extreme, options: {tech: demand_power, how: max}}
+                  - {function: extreme, options: {tech: wind_offshore, how: min}}
+                  - {function: extreme, options: {tech: wind_offshore, how: max}}
+                  - {function: extreme, options: {tech: pv, how: min}}
+                  - {function: extreme, options: {tech: pv, how: max}}
+              function: apply_clustering
+              function_options: {clustering_func: 'get_clusters_kmeans', how: 'closest', k: 5}
+        - name: "min/max solar and wind days - hierarchical - 5 days - closest"
+          time:
+              masks:
+                  - {function: extreme, options: {tech: demand_power, how: min}}
+                  - {function: extreme, options: {tech: demand_power, how: max}}
+                  - {function: extreme, options: {tech: wind_offshore, how: min}}
+                  - {function: extreme, options: {tech: wind_offshore, how: max}}
+                  - {function: extreme, options: {tech: pv, how: min}}
+                  - {function: extreme, options: {tech: pv, how: max}}
+              function: apply_clustering
+              function_options: {clustering_func: 'get_clusters_hierarchical', how: 'closest', k: 5}
+        - name: "min/max solar and wind days - kmeans - 5 days - mean"
+          time:
+              masks:
+                  - {function: extreme, options: {tech: demand_power, how: min}}
+                  - {function: extreme, options: {tech: demand_power, how: max}}
+                  - {function: extreme, options: {tech: wind_offshore, how: min}}
+                  - {function: extreme, options: {tech: wind_offshore, how: max}}
+                  - {function: extreme, options: {tech: pv, how: min}}
+                  - {function: extreme, options: {tech: pv, how: max}}
+              function: apply_clustering
+              function_options: {clustering_func: 'get_clusters_kmeans', how: 'mean', k: 5}
+
+        - name: "min/max solar and wind days - hierarchical - 5 days - mean"
+          time:
+              masks:
+                  - {function: extreme, options: {tech: demand_power, how: min}}
+                  - {function: extreme, options: {tech: demand_power, how: max}}
+                  - {function: extreme, options: {tech: wind_offshore, how: min}}
+                  - {function: extreme, options: {tech: wind_offshore, how: max}}
+                  - {function: extreme, options: {tech: pv, how: min}}
+                  - {function: extreme, options: {tech: pv, how: max}}
+              function: apply_clustering
+              function_options: {clustering_func: 'get_clusters_hierarchical', how: 'mean', k: 5}
+
+
+        ##
+        # selected weeks
+        ##
+        - name: "min/max wind weeks - drop"
+          time:
+              masks:
+                  - {function: week, options: {day_func: 'extreme', tech: 'wind_offshore', how: 'max'}}
+                  - {function: week, options: {day_func: 'extreme', tech: 'wind_offshore', how: 'min'}}
+              function: drop
+
+        - name: "min/max wind and pv weeks - drop"
+          time:
+              masks:
+                  - {function: week, options: {day_func: 'extreme', tech: 'wind_offshore', how: 'max'}}
+                  - {function: week, options: {day_func: 'extreme', tech: 'wind_offshore', how: 'min'}}
+                  - {function: week, options: {day_func: 'extreme', tech: 'pv', how: 'max'}}
+                  - {function: week, options: {day_func: 'extreme', tech: 'pv', how: 'min'}}
+              function: drop
+
+        - name: "min/max wind-demand weeks - drop"
+          time:
+              masks:
+                  - {function: week, options: {day_func: 'extreme_diff', tech0: 'wind_offshore', tech1: 'demand_power', how: 'min'}}
+                  - {function: week, options: {day_func: 'extreme_diff', tech0: 'wind_offshore', tech1: 'demand_power', how: 'min'}}
+              function: drop
+
+        - name: "min/max wind-demand weeks - downsample 12h"
+          time:
+              masks:
+                  - {function: week, options: {day_func: 'extreme_diff', tech0: 'wind_offshore', tech1: 'demand_power', how: 'min'}}
+                  - {function: week, options: {day_func: 'extreme_diff', tech0: 'wind_offshore', tech1: 'demand_power', how: 'min'}}
+              function: resample
+              function_options: {'resolution': '12H'}
+
+        - name: "min/max wind-demand weeks - kmeans - 10 days - mean"
+          time:
+              masks:
+                  - {function: week, options: {day_func: 'extreme_diff', tech0: 'wind_offshore', tech1: 'demand_power', how: 'min'}}
+                  - {function: week, options: {day_func: 'extreme_diff', tech0: 'wind_offshore', tech1: 'demand_power', how: 'min'}}
+              function: apply_clustering
+              function_options: {clustering_func: 'get_clusters_kmeans', how: 'mean', k: 10}

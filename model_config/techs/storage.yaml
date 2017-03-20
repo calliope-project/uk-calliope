@@ -48,7 +48,7 @@ techs:
         costs:
             monetary:
                 s_cap: 191  # GBP/kWh, from 318 2008 USD in {budischak2013}
-                e_cap: 42  # GBP/kW, from 703 2008 USD in {budischak2013}
+                e_cap: 422  # GBP/kW, from 703 2008 USD in {budischak2013}
                 om_fixed: 7.4  # GBP/kW/year, from 12.3 2008 USD in {budischak2013}
                 om_var: 0.002  # GBP/kWh, assumption
         depreciation:

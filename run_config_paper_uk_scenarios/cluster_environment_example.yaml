@@ -1,0 +1,18 @@
+# Parallel environment for an LSF cluster
+parallel:
+    environment: bsub
+    pre_run:
+        - 'export PATH=path/to/anaconda/bin:$PATH'
+        - 'source activate calliope'
+    resources:
+        threads: 3
+        wall_time: 720
+        memory: 10000
+
+solver: gurobi
+solver_options:
+    Method: -1  # -1 = automatic
+    Threads: 3
+
+debug:
+    echo_solver_log: true  # Display solver log in cluster run log file

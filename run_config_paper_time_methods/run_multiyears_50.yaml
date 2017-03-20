@@ -1,0 +1,5 @@
+import:
+    - ren_50.yaml
+    - setup_multiyears.yaml
+
+parallel.name: calliope_multiyears_50

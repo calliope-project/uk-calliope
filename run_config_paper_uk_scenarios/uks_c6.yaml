@@ -1,0 +1,7 @@
+import:
+    - base_c.yaml
+
+model: ../model_config_paper_uk_scenarios/model_6.yaml
+
+parallel:
+    name: uks_c6

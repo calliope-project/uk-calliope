@@ -1,9 +1,0 @@
-model: ../model_config/model_1.yaml
-
-time: {function: resample, function_options: {'resolution': '6H'}}
-
-subset_t: ['2012-01-01', '2012-01-05']
-
-mode: plan
-
-solver: gurobi

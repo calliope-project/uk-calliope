@@ -1,0 +1,7 @@
+model: ../model_config_paper_uk_scenarios/model_1.yaml
+
+time: {function: resample, function_options: {'resolution': '6H'}}
+
+mode: plan
+
+solver: gurobi

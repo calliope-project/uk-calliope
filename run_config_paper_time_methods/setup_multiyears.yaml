@@ -1,0 +1,106 @@
+import:
+    - cluster_environment.yaml
+    - model_basic.yaml
+
+solver_options: {Method: -1, Threads: 3}
+
+parallel:
+    resources:
+        threads: 3
+        wall_time: 720
+        memory: 6666
+
+    iterations:
+        ##
+        # Clustering on several years at once
+        ##
+
+        # 10 years mostly before we have demand data, except for 2003 and 2002, all earlier years use 2002 demand data
+        - name: "1994-2003 - kmeans - 25 - closest"
+          time: {function: apply_clustering, function_options: {clustering_func: 'get_clusters_kmeans', how: 'closest', k: 25}}
+          subset_t: ['1994-01-01', '2003-12-31']
+          override.techs.demand_power.constraints.r: file=demand_r_2014.csv
+
+        - name: "1994-2003 - kmeans - 25 - mean"
+          time: {function: apply_clustering, function_options: {clustering_func: 'get_clusters_kmeans', how: 'mean', k: 25}}
+          subset_t: ['1994-01-01', '2003-12-31']
+          override.techs.demand_power.constraints.r: file=demand_r_2014.csv
+
+        # 10 years where we have demand data for each year
+        - name: "2004-2013 - kmeans - 25 - closest"
+          time: {function: apply_clustering, function_options: {clustering_func: 'get_clusters_kmeans', how: 'closest', k: 25}}
+          subset_t: ['2004-01-01', '2013-12-31']
+          override.techs.demand_power.constraints.r: file=demand_r_2014.csv
+
+        - name: "2004-2013 - kmeans - 25 - mean"
+          time: {function: apply_clustering, function_options: {clustering_func: 'get_clusters_kmeans', how: 'mean', k: 25}}
+          subset_t: ['2004-01-01', '2013-12-31']
+          override.techs.demand_power.constraints.r: file=demand_r_2014.csv
+
+        ##
+        # Full 25 years of data, different clustering methods
+        ##
+        - name: "25years - kmeans - 100 - closest"
+          time: {function: apply_clustering, function_options: {clustering_func: 'get_clusters_kmeans', how: 'closest', k: 100}}
+          parallel.resources.memory: 15000  # MB per thread
+          override.techs.demand_power.constraints.r: file=demand_r_2014.csv
+
+        - name: "25years - kmeans - 100 - mean"
+          time: {function: apply_clustering, function_options: {clustering_func: 'get_clusters_kmeans', how: 'mean', k: 100}}
+          parallel.resources.memory: 15000  # MB per thread
+          override.techs.demand_power.constraints.r: file=demand_r_2014.csv
+
+        - name: "25years - hierarchical - 100 - closest"
+          time: {function: apply_clustering, function_options: {clustering_func: 'get_clusters_hierarchical', how: 'closest', k: 100}}
+          parallel.resources.memory: 15000  # MB per thread
+          override.techs.demand_power.constraints.r: file=demand_r_2014.csv
+
+        - name: "25years - hierarchical - 100 - mean"
+          time: {function: apply_clustering, function_options: {clustering_func: 'get_clusters_hierarchical', how: 'mean', k: 100}}
+          parallel.resources.memory: 15000  # MB per thread
+          override.techs.demand_power.constraints.r: file=demand_r_2014.csv
+
+        - name: "25years - kmeans - 50 - closest"
+          time: {function: apply_clustering, function_options: {clustering_func: 'get_clusters_kmeans', how: 'closest', k: 50}}
+          override.techs.demand_power.constraints.r: file=demand_r_2014.csv
+
+        - name: "25years - kmeans - single extreme days - 50 - closest"
+          time:
+              masks:
+                  - {function: extreme, options: {tech: demand_power, how: min}}
+                  - {function: extreme, options: {tech: demand_power, how: max}}
+                  - {function: extreme, options: {tech: wind_offshore, how: min}}
+                  - {function: extreme, options: {tech: wind_offshore, how: max}}
+                  - {function: extreme, options: {tech: pv, how: min}}
+                  - {function: extreme, options: {tech: pv, how: max}}
+              function: apply_clustering
+              function_options: {clustering_func: 'get_clusters_kmeans', how: 'closest', k: 50}
+          override.techs.demand_power.constraints.r: file=demand_r_2014.csv
+
+        - name: "25years - kmeans - annual extreme days - 50 - closest"
+          time:
+              masks:
+                  - {function: extreme, options: {tech: demand_power, how: min, groupby_length: 12M}}
+                  - {function: extreme, options: {tech: demand_power, how: max, groupby_length: 12M}}
+                  - {function: extreme, options: {tech: wind_offshore, how: min, groupby_length: 12M}}
+                  - {function: extreme, options: {tech: wind_offshore, how: max, groupby_length: 12M}}
+                  - {function: extreme, options: {tech: pv, how: min, groupby_length: 12M}}
+                  - {function: extreme, options: {tech: pv, how: max, groupby_length: 12M}}
+              function: apply_clustering
+              function_options: {clustering_func: 'get_clusters_kmeans', how: 'closest', k: 50}
+          override.techs.demand_power.constraints.r: file=demand_r_2014.csv
+          parallel.resources.memory: 15000  # MB per thread
+
+        - name: "25years - kmeans - 2 annual extreme days - 10 - closest"
+          time:
+              masks:
+                  - {function: extreme, options: {tech: demand_power, how: min, n: 2, groupby_length: 12M}}
+                  - {function: extreme, options: {tech: demand_power, how: max, n: 2, groupby_length: 12M}}
+                  - {function: extreme, options: {tech: wind_offshore, how: min, n: 2, groupby_length: 12M}}
+                  - {function: extreme, options: {tech: wind_offshore, how: max, n: 2, groupby_length: 12M}}
+                  - {function: extreme, options: {tech: pv, how: min, n: 2, groupby_length: 12M}}
+                  - {function: extreme, options: {tech: pv, how: max, n: 2, groupby_length: 12M}}
+              function: apply_clustering
+              function_options: {clustering_func: 'get_clusters_kmeans', how: 'closest', k: 50}
+          override.techs.demand_power.constraints.r: file=demand_r_2014.csv
+          parallel.resources.memory: 15000  # MB per thread

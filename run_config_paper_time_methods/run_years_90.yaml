@@ -1,0 +1,5 @@
+import:
+    - ren_90.yaml
+    - setup_years.yaml
+
+parallel.name: calliope_years_90

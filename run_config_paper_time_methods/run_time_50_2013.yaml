@@ -1,0 +1,7 @@
+import:
+    - ren_50.yaml
+    - setup_time.yaml
+
+subset_t: ['2013-01-01', '2013-12-31']
+
+parallel.name: calliope_time_50_2013

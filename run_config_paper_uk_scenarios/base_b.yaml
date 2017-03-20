@@ -1,0 +1,19 @@
+import:
+    - run_settings.yaml
+    - cluster_environment.yaml
+    - iterations_default.yaml
+
+#
+# MODEL SETTINGS OVERRIDE
+#
+
+override:
+    techs:
+        unmet_demand_power_supply:
+            constraints:
+                e_cap.max: inf
+    group_fraction:
+        ignored_techs:
+            capacity: ['hvdc_import', 'unmet_demand_power_supply']  # Count only capacity of the remaining techs without unmet_demand_power and imports
+        output:
+            unmet_demand_power_supply: ['<=', 0.05]

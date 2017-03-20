@@ -1,0 +1,7 @@
+import:
+    - base_e.yaml
+
+model: ../model_config_paper_uk_scenarios/model_4.yaml
+
+parallel:
+    name: uks_e4

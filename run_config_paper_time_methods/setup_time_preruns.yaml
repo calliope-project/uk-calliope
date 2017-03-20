@@ -1,0 +1,88 @@
+import:
+    - cluster_environment.yaml
+    - model_basic.yaml
+
+solver_options: {Method: 2, Threads: 1}
+
+parallel:
+    resources:
+        threads: 1
+        wall_time: 480
+        memory: 20000  # 20 GB
+
+    iterations:
+        # k-means - mean
+        - name: "k-means - 3 days - mean"
+          time: {function: apply_clustering, function_options: {clustering_func: 'get_clusters_kmeans', how: 'mean', k: 3}}
+        - name: "k-means - 4 days - mean"
+          time: {function: apply_clustering, function_options: {clustering_func: 'get_clusters_kmeans', how: 'mean', k: 4}}
+        - name: "k-means - 5 days - mean"
+          time: {function: apply_clustering, function_options: {clustering_func: 'get_clusters_kmeans', how: 'mean', k: 5}}
+        - name: "k-means - 6 days - mean"
+          time: {function: apply_clustering, function_options: {clustering_func: 'get_clusters_kmeans', how: 'mean', k: 6}}
+        - name: "k-means - 7 days - mean"
+          time: {function: apply_clustering, function_options: {clustering_func: 'get_clusters_kmeans', how: 'mean', k: 7}}
+        - name: "k-means - 8 days - mean"
+          time: {function: apply_clustering, function_options: {clustering_func: 'get_clusters_kmeans', how: 'mean', k: 8}}
+        - name: "k-means - 9 days - mean"
+          time: {function: apply_clustering, function_options: {clustering_func: 'get_clusters_kmeans', how: 'mean', k: 9}}
+        - name: "k-means - 10 days - mean"
+          time: {function: apply_clustering, function_options: {clustering_func: 'get_clusters_kmeans', how: 'mean', k: 10}}
+        - name: "k-means - 11 days - mean"
+          time: {function: apply_clustering, function_options: {clustering_func: 'get_clusters_kmeans', how: 'mean', k: 11}}
+        - name: "k-means - 12 days - mean"
+          time: {function: apply_clustering, function_options: {clustering_func: 'get_clusters_kmeans', how: 'mean', k: 12}}
+        - name: "k-means - 13 days - mean"
+          time: {function: apply_clustering, function_options: {clustering_func: 'get_clusters_kmeans', how: 'mean', k: 13}}
+        - name: "k-means - 14 days - mean"
+          time: {function: apply_clustering, function_options: {clustering_func: 'get_clusters_kmeans', how: 'mean', k: 14}}
+        - name: "k-means - 15 days - mean"
+          time: {function: apply_clustering, function_options: {clustering_func: 'get_clusters_kmeans', how: 'mean', k: 15}}
+        - name: "k-means - 15 days - mean"
+          time: {function: apply_clustering, function_options: {clustering_func: 'get_clusters_kmeans', how: 'mean', k: 16}}
+        - name: "k-means - 15 days - mean"
+          time: {function: apply_clustering, function_options: {clustering_func: 'get_clusters_kmeans', how: 'mean', k: 17}}
+        - name: "k-means - 15 days - mean"
+          time: {function: apply_clustering, function_options: {clustering_func: 'get_clusters_kmeans', how: 'mean', k: 18}}
+        - name: "k-means - 15 days - mean"
+          time: {function: apply_clustering, function_options: {clustering_func: 'get_clusters_kmeans', how: 'mean', k: 19}}
+        - name: "k-means - 20 days - mean"
+          time: {function: apply_clustering, function_options: {clustering_func: 'get_clusters_kmeans', how: 'mean', k: 20}}
+
+        # k-means - closest
+        - name: "k-means - 3 days - closest"
+          time: {function: apply_clustering, function_options: {clustering_func: 'get_clusters_kmeans', how: 'closest', k: 3}}
+        - name: "k-means - 4 days - closest"
+          time: {function: apply_clustering, function_options: {clustering_func: 'get_clusters_kmeans', how: 'closest', k: 4}}
+        - name: "k-means - 5 days - closest"
+          time: {function: apply_clustering, function_options: {clustering_func: 'get_clusters_kmeans', how: 'closest', k: 5}}
+        - name: "k-means - 6 days - closest"
+          time: {function: apply_clustering, function_options: {clustering_func: 'get_clusters_kmeans', how: 'closest', k: 6}}
+        - name: "k-means - 7 days - closest"
+          time: {function: apply_clustering, function_options: {clustering_func: 'get_clusters_kmeans', how: 'closest', k: 7}}
+        - name: "k-means - 8 days - closest"
+          time: {function: apply_clustering, function_options: {clustering_func: 'get_clusters_kmeans', how: 'closest', k: 8}}
+        - name: "k-means - 9 days - closest"
+          time: {function: apply_clustering, function_options: {clustering_func: 'get_clusters_kmeans', how: 'closest', k: 9}}
+        - name: "k-means - 10 days - closest"
+          time: {function: apply_clustering, function_options: {clustering_func: 'get_clusters_kmeans', how: 'closest', k: 10}}
+        - name: "k-means - 11 days - closest"
+          time: {function: apply_clustering, function_options: {clustering_func: 'get_clusters_kmeans', how: 'closest', k: 11}}
+        - name: "k-means - 12 days - closest"
+          time: {function: apply_clustering, function_options: {clustering_func: 'get_clusters_kmeans', how: 'closest', k: 12}}
+        - name: "k-means - 13 days - closest"
+          time: {function: apply_clustering, function_options: {clustering_func: 'get_clusters_kmeans', how: 'closest', k: 13}}
+        - name: "k-means - 14 days - closest"
+          time: {function: apply_clustering, function_options: {clustering_func: 'get_clusters_kmeans', how: 'closest', k: 14}}
+        - name: "k-means - 15 days - closest"
+          time: {function: apply_clustering, function_options: {clustering_func: 'get_clusters_kmeans', how: 'closest', k: 15}}
+        - name: "k-means - 15 days - closest"
+          time: {function: apply_clustering, function_options: {clustering_func: 'get_clusters_kmeans', how: 'closest', k: 16}}
+        - name: "k-means - 15 days - closest"
+          time: {function: apply_clustering, function_options: {clustering_func: 'get_clusters_kmeans', how: 'closest', k: 17}}
+        - name: "k-means - 15 days - closest"
+          time: {function: apply_clustering, function_options: {clustering_func: 'get_clusters_kmeans', how: 'closest', k: 18}}
+        - name: "k-means - 15 days - closest"
+          time: {function: apply_clustering, function_options: {clustering_func: 'get_clusters_kmeans', how: 'closest', k: 19}}
+        - name: "k-means - 20 days - closest"
+          time: {function: apply_clustering, function_options: {clustering_func: 'get_clusters_kmeans', how: 'closest', k: 20}}
