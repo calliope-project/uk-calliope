@@ -1,0 +1,197 @@
+locations:
+    Z1_1,Z1_2,Z1_3,Z1_4,Z3,Z4,Z6:
+        techs:
+            ccgt:
+                constraints:
+                    energy_cap_max: 0
+            coal:
+                constraints:
+                    energy_cap_max: 0
+            nuclear:
+                constraints:
+                    energy_cap_max: 0
+            ocgt:
+                constraints:
+                    energy_cap_max: 0
+    Z10:
+        techs:
+            ccgt:
+                constraints:
+                    energy_cap_max: 5218000.0
+            coal:
+                constraints:
+                    energy_cap_max: 0.0
+            nuclear:
+                constraints:
+                    energy_cap_max: 0.0
+            ocgt:
+                constraints:
+                    energy_cap_max: 30000.0
+    Z11:
+        techs:
+            ccgt:
+                constraints:
+                    energy_cap_max: 99000.0
+            coal:
+                constraints:
+                    energy_cap_max: 1988000.0
+            nuclear:
+                constraints:
+                    energy_cap_max: 0.0
+            ocgt:
+                constraints:
+                    energy_cap_max: 63000.0
+    Z12:
+        techs:
+            ccgt:
+                constraints:
+                    energy_cap_max: 3226000.0
+            coal:
+                constraints:
+                    energy_cap_max: 0.0
+            nuclear:
+                constraints:
+                    energy_cap_max: 1216000.0
+            ocgt:
+                constraints:
+                    energy_cap_max: 598000.0
+    Z13:
+        techs:
+            ccgt:
+                constraints:
+                    energy_cap_max: 8624000.0
+            coal:
+                constraints:
+                    energy_cap_max: 0.0
+            nuclear:
+                constraints:
+                    energy_cap_max: 0.0
+            ocgt:
+                constraints:
+                    energy_cap_max: 0.0
+    Z14:
+        techs:
+            ccgt:
+                constraints:
+                    energy_cap_max: 1123000.0
+            coal:
+                constraints:
+                    energy_cap_max: 0.0
+            nuclear:
+                constraints:
+                    energy_cap_max: 0.0
+            ocgt:
+                constraints:
+                    energy_cap_max: 144000.0
+    Z15:
+        techs:
+            ccgt:
+                constraints:
+                    energy_cap_max: 5171000.0
+            coal:
+                constraints:
+                    energy_cap_max: 0.0
+            nuclear:
+                constraints:
+                    energy_cap_max: 1080000.0
+            ocgt:
+                constraints:
+                    energy_cap_max: 94000.0
+    Z16:
+        techs:
+            ccgt:
+                constraints:
+                    energy_cap_max: 1320000.0
+            coal:
+                constraints:
+                    energy_cap_max: 0.0
+            nuclear:
+                constraints:
+                    energy_cap_max: 0.0
+            ocgt:
+                constraints:
+                    energy_cap_max: 258000.0
+    Z17:
+        techs:
+            ccgt:
+                constraints:
+                    energy_cap_max: 905000.0
+            coal:
+                constraints:
+                    energy_cap_max: 0.0
+            nuclear:
+                constraints:
+                    energy_cap_max: 912000.0
+            ocgt:
+                constraints:
+                    energy_cap_max: 140000.0
+    Z2:
+        techs:
+            ccgt:
+                constraints:
+                    energy_cap_max: 400000.0
+            coal:
+                constraints:
+                    energy_cap_max: 0.0
+            nuclear:
+                constraints:
+                    energy_cap_max: 0.0
+            ocgt:
+                constraints:
+                    energy_cap_max: 12000.0
+    Z5:
+        techs:
+            ccgt:
+                constraints:
+                    energy_cap_max: 0.0
+            coal:
+                constraints:
+                    energy_cap_max: 0.0
+            nuclear:
+                constraints:
+                    energy_cap_max: 2163000.0
+            ocgt:
+                constraints:
+                    energy_cap_max: 156000.0
+    Z7:
+        techs:
+            ccgt:
+                constraints:
+                    energy_cap_max: 0.0
+            coal:
+                constraints:
+                    energy_cap_max: 0.0
+            nuclear:
+                constraints:
+                    energy_cap_max: 1208000.0
+            ocgt:
+                constraints:
+                    energy_cap_max: 141000.0
+    Z8:
+        techs:
+            ccgt:
+                constraints:
+                    energy_cap_max: 8055000.0
+            coal:
+                constraints:
+                    energy_cap_max: 3831000.0
+            nuclear:
+                constraints:
+                    energy_cap_max: 0.0
+            ocgt:
+                constraints:
+                    energy_cap_max: 1318000.0
+    Z9:
+        techs:
+            ccgt:
+                constraints:
+                    energy_cap_max: 5262000.0
+            coal:
+                constraints:
+                    energy_cap_max: 0.0
+            nuclear:
+                constraints:
+                    energy_cap_max: 2406000.0
+            ocgt:
+                constraints:
+                    energy_cap_max: 155000.0

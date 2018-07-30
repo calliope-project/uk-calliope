@@ -1,0 +1,103 @@
+locations:
+    Z10:
+        techs:
+            wind_offshore:
+                constraints:
+                    energy_cap_min: 683400.0
+    Z11:
+        techs:
+            wind_offshore:
+                constraints:
+                    energy_cap_max: 0.0
+    Z12:
+        techs:
+            wind_offshore:
+                constraints:
+                    energy_cap_min: 4200800.0
+                    energy_cap_max: 5000000
+    Z13:
+        techs:
+            wind_offshore:
+                constraints:
+                    energy_cap_min: 0.0
+    Z14:
+        techs:
+            wind_offshore:
+                constraints:
+                    energy_cap_max: 0.0
+    Z15:
+        techs:
+            wind_offshore:
+                constraints:
+                    energy_cap_min: 1069500.0
+    Z16:
+        techs:
+            wind_offshore:
+                constraints:
+                    energy_cap_min: 400000.0
+    Z17:
+        techs:
+            wind_offshore:
+                constraints:
+                    energy_cap_min: 0.0
+    Z1_1:
+        techs:
+            wind_offshore:
+                constraints:
+                    energy_cap_min: 0.0
+    Z1_2:
+        techs:
+            wind_offshore:
+                constraints:
+                    energy_cap_min: 0.0
+    Z1_3:
+        techs:
+            wind_offshore:
+                constraints:
+                    energy_cap_min: 1352000.0
+    Z1_4:
+        techs:
+            wind_offshore:
+                constraints:
+                    energy_cap_min: 0.0
+    Z2:
+        techs:
+            wind_offshore:
+                constraints:
+                    energy_cap_min: 542400.0
+    Z3:
+        techs:
+            wind_offshore:
+                constraints:
+                    energy_cap_min: 1309000.0
+    Z4:
+        techs:
+            wind_offshore:
+                constraints:
+                    energy_cap_min: 0.0
+    Z5:
+        techs:
+            wind_offshore:
+                constraints:
+                    energy_cap_min: 475000.0
+    Z6:
+        techs:
+            wind_offshore:
+                constraints:
+                    energy_cap_min: 174000.0
+    Z7:
+        techs:
+            wind_offshore:
+                constraints:
+                    energy_cap_min: 632600.0
+    Z8:
+        techs:
+            wind_offshore:
+                constraints:
+                    energy_cap_min: 7800000.0
+                    energy_cap_max: 15000000
+    Z9:
+        techs:
+            wind_offshore:
+                constraints:
+                    energy_cap_min: 2730200.0

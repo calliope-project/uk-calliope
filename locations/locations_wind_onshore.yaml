@@ -1,0 +1,101 @@
+locations:
+    Z10:
+        techs:
+            wind_onshore:
+                constraints:
+                    energy_cap_equals: 191200
+    Z11:
+        techs:
+            wind_onshore:
+                constraints:
+                    energy_cap_equals: 261399
+    Z12:
+        techs:
+            wind_onshore:
+                constraints:
+                    energy_cap_equals: 392931
+    Z13:
+        techs:
+            wind_onshore:
+                constraints:
+                    energy_cap_equals: 1097351
+    Z14:
+        techs:
+            wind_onshore:
+                constraints:
+                    energy_cap_equals: 13620
+    Z15:
+        techs:
+            wind_onshore:
+                constraints:
+                    energy_cap_equals: 63000
+    Z16:
+        techs:
+            wind_onshore:
+                constraints:
+                    energy_cap_equals: 71300
+    Z17:
+        techs:
+            wind_onshore:
+                constraints:
+                    energy_cap_equals: 246440
+    Z1_1:
+        techs:
+            wind_onshore:
+                constraints:
+                    energy_cap_equals: 383880
+    Z1_2:
+        techs:
+            wind_onshore:
+                constraints:
+                    energy_cap_equals: 371800
+    Z1_3:
+        techs:
+            wind_onshore:
+                constraints:
+                    energy_cap_equals: 1039200
+    Z1_4:
+        techs:
+            wind_onshore:
+                constraints:
+                    energy_cap_equals: 1089600
+    Z2:
+        techs:
+            wind_onshore:
+                constraints:
+                    energy_cap_equals: 887399
+    Z3:
+        techs:
+            wind_onshore:
+                constraints:
+                    energy_cap_equals: 604738
+    Z4:
+        techs:
+            wind_onshore:
+                constraints:
+                    energy_cap_equals: 1656262
+    Z5:
+        techs:
+            wind_onshore:
+                constraints:
+                    energy_cap_equals: 3103674
+    Z6:
+        techs:
+            wind_onshore:
+                constraints:
+                    energy_cap_equals: 2023319
+    Z7:
+        techs:
+            wind_onshore:
+                constraints:
+                    energy_cap_equals: 611412
+    Z8:
+        techs:
+            wind_onshore:
+                constraints:
+                    energy_cap_equals: 669879
+    Z9:
+        techs:
+            wind_onshore:
+                constraints:
+                    energy_cap_equals: 650182

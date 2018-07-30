@@ -1,0 +1,146 @@
+tech_groups:
+
+    supply_electricity_gas:
+        essentials:
+            parent: supply_electricity_fossil
+
+    supply_electricity_coal:
+        essentials:
+            parent: supply_electricity_fossil
+
+    ccgt_base:
+        essentials:
+            color: '#FDC97D'
+            name: CCGT
+            parent: supply_electricity_gas
+        constraints:
+            energy_cap_max: 0
+            energy_eff: 0.58  # CCGT medium nth of a kind, {parsons2011}
+            resource: inf
+        costs:
+            monetary:
+                energy_cap: 720.63  # 2016 £/kW, CCGT medium nth of a kind, {parsons2011}
+                om_prod: 0.000108  # 2016 £/kWh, CCGT medium nth of a kind, {parsons2011}
+                om_annual: 24.97  # 2016 £/kW/yr, CCGT medium nth of a kind, {parsons2011}
+                om_con: 0.03081  # 2016 £/kWh net, medium, Table 6.3, {mott2010} (with 1 GJ = 277.777 kWh)
+            co2:
+                #om_con: 0.184  # kg CO2/kWh gross, {dukes2013}
+                om_prod:  0.490  # kg CO2eq/kWh, {ipcc_ar5_wg3}
+
+    ocgt_base:
+        essentials:
+            color: '#EA6167'
+            name: OCGT
+            parent: supply_electricity_gas
+        constraints:
+            energy_eff: 0.41  # OCGT medium nth of a kind, {parsons2011}
+            resource: inf
+        costs:
+            monetary:
+                energy_cap: 335.35  # 2016 £/kW, 2016, medium, {decc2013}
+                om_annual: 10.38  # 2016 £/kW/yr, 2016, medium, {decc2013}
+                om_con: 0.03081   # 2016 £/kWh net, medium, Table 6.3, {mott2010} (with 1 GJ = 277.777 kWh)
+                om_prod: 0.000105  # 2016 £/kWh, 2016, medium, {decc2013}
+            co2:
+                # om_con: 0.184  # kg CO2/kWh gross, {dukes2013}, Assuming it is burning natural gas like CCGT
+                om_prod: 0.64  # kg CO2eq/kWh, assuming that all LCA emissions are same as for CCGT, and also burning gas, but with lower fuel efficiency, {ipcc_ar5_wg3}
+
+    coal_base:
+        essentials:
+            color: '#3F3F3F'
+            name: Coal
+            parent: supply_electricity_coal
+        constraints:
+            energy_eff: 0.44  # Coal ASC with FGD medium nth o.a.k., {parsons2011}
+            # energy_ramping: 0.6  # Assume about 1% per minute times 60 minutes, based on {mit2011}
+            resource: inf
+            energy_cap_min_use: 0.5  # Assumption
+        costs:
+            monetary:
+                energy_cap: 1769.74  # 2016 £/kWh, Coal ASC with FGD medium nth o.a.k., {parsons2011}
+                om_prod: 0.001077  # 2016 £/kWh, Coal ASC with FGD medium nth o.a.k., {parsons2011}
+                om_annual: 37.71  # 2016 £/kW/yr, Coal ASC with FGD medium nth o.a.k., {parsons2011}
+                om_con:  0.00895  # 2016 £/kWh net, medium, Table 6.3, {mott2010} (with 1 GJ = 277.777 kWh)
+            co2:
+                # om_con: 0.3  # kg CO2/kWh gross, {dukes2013}
+                om_prod:  0.820  # kg CO2eq/kWh, {ipcc_ar5_wg3}
+
+techs:
+
+    ccgt:
+        essentials:
+            parent: ccgt_base
+
+    ccgt_new:
+        essentials:
+            color: '#FDBC5E'
+            name: CCGT (new build)
+            parent: ccgt_base
+        constraints:
+            energy_cap_max: 2e6  # 2 GW per region
+
+    ccgt_existing:
+        essentials:
+            parent: ccgt_base
+        costs:
+            monetary:
+                energy_cap: 67  # Existing plants are written off partially
+
+    ccgt_ccs:
+        essentials:
+            color: '#FDC97D'
+            name: CCGT (with CCS)
+            parent: supply_electricity_gas
+        constraints:
+            energy_eff: 0.48   # CCGT with CCS medium nth of a kind, {parsons2011}
+            resource: inf
+        costs:
+            monetary:
+                energy_cap: 1313.8  # 2016 £/kW, CCGT+CCS medium nth of a kind, {parsons2011}
+                om_prod: 0.0005  # 2016 £/kWh, CCGT+CCS medium nth of a kind, {parsons2011}
+                om_annual: 38.484  # 2016 £/kW/yr, CCGT+CCS medium nth of a kind, {parsons2011}
+                om_con:  0.0265  # 2016 £/kWh net, medium, Table 6.3, {mott2010} (with 1 GJ = 277.777 kWh)
+            co2:  # CO2 removal: 90% {parsons2011}
+                # om_con: 0.0184  # 10% of om_fuel of non-CCS
+                om_prod:  0.170  # kg CO2eq/kWh, {ipcc_ar5_wg3}
+
+    ocgt:
+        essentials:
+            parent: ocgt_base
+
+    ocgt_existing:
+        essentials:
+            parent: ocgt_base
+        costs:
+            monetary:
+                energy_cap: 32  # Existing plants are written off partially
+
+    coal:
+        essentials:
+            parent: coal_base
+
+    coal_existing:
+        essentials:
+            parent: coal_base
+        costs:
+            monetary:
+                energy_cap: 164  # Existing plants are written off partially
+
+    coal_ccs:
+        essentials:
+            color: '#3F3F3F'
+            name: Coal (ASC/FGD, with CCS)
+            parent: supply_electricity_coal
+        constraints:
+            energy_eff: 0.367  # Coal ASC/FGD/CCS medium nth o.a.k., {parsons2011}
+            # energy_ramping: 0.6  # Assume about 1% per minute, based on {mit2011}
+            resource: inf
+        costs:
+            monetary:
+                energy_cap: 2876  # 2016 £/kWh, Coal ASC/FGD/CCS medium nth o.a.k., {parsons2011}
+                om_prod: 0.0021  # 2016 £/kWh, Coal ASC/FGD/CCS medium nth o.a.k., {parsons2011}
+                om_annual: 68.65  # 2016 £/kW/yr, Coal ASC/FGD/CCS medium nth o.a.k., {parsons2011}
+                om_con:  0.0077  # 2016 £/kWh net, medium, Table 6.3, {mott2010} (with 1 GJ = 277.777 kWh)
+            co2:
+                # om_con: 0.03  # 10% of om_fuel of non-CCS, CO2 removal: 90% {parsons2011}
+                om_prod:  0.200  # kg CO2eq/kWh, assuming IGCC which is slightly better than PC, {ipcc_ar5_wg3}

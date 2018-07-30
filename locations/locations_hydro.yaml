@@ -1,0 +1,46 @@
+locations:
+    Z1_1,Z1_2,Z4,Z7,Z8,Z10,Z11,Z12,Z13,Z14,Z16,Z17:
+        techs:
+            hydro_existing:
+                constraints:
+                    energy_cap_equals: 0
+    Z15:
+        techs:
+            hydro_existing:
+                constraints:
+                    energy_cap_equals: 19000.0
+    Z1_3:
+        techs:
+            hydro_existing:
+                constraints:
+                    energy_cap_equals: 127000.0
+    Z1_4:
+        techs:
+            hydro_existing:
+                constraints:
+                    energy_cap_equals: 420000.0
+    Z2:
+        techs:
+            hydro_existing:
+                constraints:
+                    energy_cap_equals: 20000.0
+    Z3:
+        techs:
+            hydro_existing:
+                constraints:
+                    energy_cap_equals: 509000.0
+    Z5:
+        techs:
+            hydro_existing:
+                constraints:
+                    energy_cap_equals: 15000.0
+    Z6:
+        techs:
+            hydro_existing:
+                constraints:
+                    energy_cap_equals: 33000.0
+    Z9:
+        techs:
+            hydro_existing:
+                constraints:
+                    energy_cap_equals: 79000.0

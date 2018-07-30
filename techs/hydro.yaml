@@ -1,0 +1,28 @@
+techs:
+
+    hydro_existing:
+        essentials:
+            color: '#FF2EAC'
+            name: Hydro
+            parent: supply_electricity_renewable
+        constraints:
+            resource: inf
+        costs:
+            monetary:
+                energy_cap: 4715.92  # 2016 £/kW, 2020, medium, Hydropower 100kW-1000kW, {decc2013}
+                om_annual: 10.9  # 2016 £/kW, 2020, medium, Hydropower 100kW-1000kW, includes om_var {decc2013}
+            co2:
+                om_prod: 0.024  # kg CO2eq/kWh, {ipcc_ar5_wg3}
+
+    pumped_storage_existing:
+        essentials:
+            color: '#DC5CE5'
+            name: Pumped storage
+            parent: storage_electricity
+        constraints:
+            energy_eff: 0.87  # Based on {dinorwig_report}, to get ~0.75 round-trip efficiency
+        costs:
+            monetary:
+                om_annual: 12.93  # 2016 £/kW, Pumped storage medium nth of a kind, {parsons2011}
+            co2:
+                om_prod: 0.024  # kg CO2eq/kWh, {ipcc_ar5_wg3}

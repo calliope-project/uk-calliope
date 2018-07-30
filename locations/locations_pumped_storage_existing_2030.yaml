@@ -1,0 +1,104 @@
+locations:
+    Z10:
+        techs:
+            pumped_storage_existing:
+                constraints:
+                    energy_cap_equals: 0.0
+    Z11:
+        techs:
+            pumped_storage_existing:
+                constraints:
+                    energy_cap_equals: 0.0
+    Z12:
+        techs:
+            pumped_storage_existing:
+                constraints:
+                    energy_cap_equals: 0.0
+    Z13:
+        techs:
+            pumped_storage_existing:
+                constraints:
+                    energy_cap_equals: 0.0
+    Z14:
+        techs:
+            pumped_storage_existing:
+                constraints:
+                    energy_cap_equals: 0.0
+    Z15:
+        techs:
+            pumped_storage_existing:
+                constraints:
+                    energy_cap_equals: 0.0
+    Z16:
+        techs:
+            pumped_storage_existing:
+                constraints:
+                    energy_cap_equals: 0.0
+    Z17:
+        techs:
+            pumped_storage_existing:
+                constraints:
+                    energy_cap_equals: 0.0
+    Z1_1:
+        techs:
+            pumped_storage_existing:
+                constraints:
+                    energy_cap_equals: 0.0
+    Z1_2:
+        techs:
+            pumped_storage_existing:
+                constraints:
+                    energy_cap_equals: 0.0
+    Z1_3:
+        techs:
+            pumped_storage_existing:
+                constraints:
+                    energy_cap_equals: 0.0
+    Z1_4:
+        techs:
+            pumped_storage_existing:
+                constraints:
+                    energy_cap_equals: 912000.0
+                    storage_cap_equals: 36300000
+    Z2:
+        techs:
+            pumped_storage_existing:
+                constraints:
+                    energy_cap_equals: 0.0
+    Z3:
+        techs:
+            pumped_storage_existing:
+                constraints:
+                    energy_cap_equals: 440000.0
+                    storage_cap_equals: 10000000
+    Z4:
+        techs:
+            pumped_storage_existing:
+                constraints:
+                    energy_cap_equals: 0.0
+    Z5:
+        techs:
+            pumped_storage_existing:
+                constraints:
+                    energy_cap_equals: 0.0
+    Z6:
+        techs:
+            pumped_storage_existing:
+                constraints:
+                    energy_cap_equals: 0.0
+    Z7:
+        techs:
+            pumped_storage_existing:
+                constraints:
+                    energy_cap_equals: 0.0
+    Z8:
+        techs:
+            pumped_storage_existing:
+                constraints:
+                    energy_cap_equals: 0.0
+    Z9:
+        techs:
+            pumped_storage_existing:
+                constraints:
+                    energy_cap_equals: 2004000.0
+                    storage_cap_equals: 10400000

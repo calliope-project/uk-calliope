@@ -1,0 +1,19 @@
+techs:
+    battery:
+        essentials:
+            color: '#177202'
+            name: Battery energy storage
+            parent: storage_electricity
+        constraints:
+            charge_rate: 0.25  # {own_assumptions}
+            energy_eff: 0.954  # {own_assumptions}
+            storage_cap_max: inf
+            storage_loss: 8.33e-05  # {own_assumptions}
+        costs:
+            monetary:
+                energy_cap: 139.69  # 2016 GBP/kW, low cost scenario {own_assumptions}
+                om_annual: 6.38  # 2016 GBP/kW {own_assumptions}
+                om_prod: 0.00194  # 2016 GBP/kWh {own_assumptions}
+                storage_cap: 109.13  # 2016 GBP/kWh, low cost scenario {own_assumptions}
+        depreciation:
+            plant_life: 15  # {own_assumptions}

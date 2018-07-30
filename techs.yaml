@@ -1,0 +1,51 @@
+import:
+    - techs/lifetimes_and_interest_rates.yaml
+    - techs/wind_solar.yaml
+    - techs/fossil.yaml
+    - techs/nuclear.yaml
+    - techs/hydro.yaml
+    - techs/transmission.yaml
+    - techs/import.yaml
+    - techs/storage.yaml
+    - techs/tidal.yaml
+    - techs/csp.yaml
+
+tech_groups:
+
+    supply_electricity:
+        essentials:
+            carrier: electricity
+            parent: supply
+
+    supply_electricity_renewable:
+        essentials:
+            parent: supply_electricity
+        costs:
+            domestic:
+                om_prod: 1
+
+    supply_electricity_nuclear:
+        essentials:
+            parent: supply_electricity
+        costs:
+            domestic:
+                om_prod: 0.5
+
+    supply_electricity_fossil:
+        essentials:
+            parent: supply_electricity
+        costs:
+            domestic:
+                om_prod: 0.5
+
+    supply_electricity_import:
+        essentials:
+            parent: supply_electricity
+        costs:
+            domestic:
+                om_prod: 0
+
+    storage_electricity:
+        essentials:
+            carrier: electricity
+            parent: storage

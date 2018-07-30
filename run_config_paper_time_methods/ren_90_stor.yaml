@@ -1,3 +1,0 @@
-override.group_fraction.output.supply_power_renewable: ['>=', 0.90]
-
-override.techs.battery.constraints.e_cap.max: 500000  # 500 MWh per location

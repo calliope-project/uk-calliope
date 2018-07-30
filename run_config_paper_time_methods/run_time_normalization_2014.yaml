@@ -1,7 +1,0 @@
-import:
-    - ren_90.yaml
-    - setup_time_normalization.yaml
-
-subset_t: ['2014-01-01', '2014-12-31']
-
-parallel.name: calliope_time_normalization_2014

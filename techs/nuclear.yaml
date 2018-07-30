@@ -1,0 +1,29 @@
+tech_groups:
+    nuclear_base:
+        essentials:
+            color: '#82FA58'
+            name: Nuclear
+            parent: supply_electricity_nuclear
+        constraints:
+            # energy_ramping: 0.2  # From {mit2011} "Relatively new nuclear reactors ramp asymmetrically: plants can down-ramp 20% of their total output within an hour, but they require six to eight hours to ramp up to full load."
+            resource: inf
+        costs:
+            monetary:
+                energy_cap: 3263.78  # 2016 £/kW, Nuclear PWR medium nth of a kind, {parsons2011}
+                om_prod: 0.000539  # 2016 £/kWh, Nuclear PWR medium nth of a kind, {parsons2011}
+                om_annual: 64.64  # 2016 £/kW/yr, Nuclear PWR medium nth of a kind, {parsons2011}
+                om_con: 0.00524  # 2016 £/kWh, Table 2, {decc2013}
+            co2:
+                om_prod:  0.012  # kg CO2eq/kWh, {ipcc_ar5_wg3}
+
+techs:
+    nuclear:
+        essentials:
+            parent: nuclear_base
+
+    nuclear_existing:
+        essentials:
+            parent: nuclear_base
+        costs:
+            monetary:
+                energy_cap: 303  # Existing plants are written off partially

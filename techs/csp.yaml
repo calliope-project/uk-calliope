@@ -1,0 +1,28 @@
+techs:
+    csp_baseload:
+        essentials:
+            color: '#99CB48'
+            name: CSP (baseload configuration)
+            parent: supply_electricity_renewable
+        constraints:
+            resource: inf
+        costs:
+            monetary:  # Converted from USD with Oanda average exchange rate for 2010 at 0.647, http://www.oanda.com/currency/average
+                energy_cap: 3103  # Assuming 25 m2/kW solar field and 30 hours storage --> 75 kWh per kW of e_cap, based on {pfenninger2014}: 543 + 25 * 62 + 1/0.4 * 88 + 75 * 10.4 = 3103 GBP / kW
+                om_prod: 0.0012  # £/kWh, {pfenninger2014}
+            co2:
+                om_prod:  0.027  # kg CO2eq/kWh, {ipcc_ar5_wg3}
+            domestic:
+                om_prod: 0  # It's totally imported!
+
+    hvdc_desert:
+        constraints:
+            energy_eff: 0.9  # Assumption
+            energy_eff_per_distance: 1.0  # See energy_eff instead
+        essentials:
+            name: HVDC desert import
+            parent: transmission_electricity
+        costs:
+            monetary:
+                energy_cap: 0  # "Free" -- only calculating cost/kWh of transmission with om_var
+                om_prod: 0.005   # £/kW, HVDC transmission costs based on {williges_2010}

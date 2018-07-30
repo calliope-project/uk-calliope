@@ -1,0 +1,36 @@
+tech_groups:
+    tidal:
+        constraints:
+            resource: inf
+        essentials:
+            parent: supply_electricity_renewable
+
+techs:
+    tidal_stream:
+        essentials:
+            color: '#8B0043'
+            name: Tidal stream (deep)
+            parent: tidal
+        constraints:
+            energy_cap_max: 0
+        costs:
+            monetary:
+                energy_cap: 3200
+                om_annual: 114
+                om_prod: 0.001
+            co2:
+                om_prod: 0.017
+
+    tidal_range:
+        essentials:
+            color: '#C80065'
+            name: Tidal range
+            parent: tidal
+        constraints:
+            energy_cap_max: 0
+        costs:
+            monetary:
+                energy_cap: 3000
+                om_annual: 38
+            co2:
+                om_prod: 0.017

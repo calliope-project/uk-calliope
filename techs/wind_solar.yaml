@@ -1,0 +1,79 @@
+tech_groups:
+    pv:
+        constraints:
+            resource_area_max: inf
+            resource_area_per_energy_cap: 1.0
+        essentials:
+            parent: supply_electricity_renewable
+
+    wind:
+        constraints:
+            resource_area_max: inf
+            resource_area_per_energy_cap: 1.0
+        essentials:
+            parent: supply_electricity_renewable
+
+techs:
+    pv_rooftop:
+        essentials:
+            color: '#FEF750'
+            name: Small-scale solar PV
+            parent: pv
+        constraints:
+            energy_cap_max: inf
+            resource: file=pv.csv
+        costs:
+            monetary:
+                energy_cap: 692.52  # 2016 GBP/kW, median cost scenario
+                om_annual: 10.07  # 2016 GBP/kW {own_assumptions}
+            co2:
+                om_prod: 0.041  # kg CO2eq/kWh, {ipcc_ar5_wg3}
+
+    pv_utility_scale:
+        essentials:
+            color: '#FFA600'
+            name: Utility-scale solar PV
+            parent: pv
+        constraints:
+            energy_cap_max: 0  # Overridden in locations
+            resource: file=pv.csv
+        costs:
+            monetary:
+                energy_cap: 558.76  # 2016 GBP/kW, median cost scenario {own_assumptions}
+                om_annual: 7.05  # 2016 GBP/kW {own_assumptions}
+            co2:
+                om_prod: 0.048  # kg CO2eq/kWh, {ipcc_ar5_wg3}
+
+    wind_offshore:
+        essentials:
+            color: '#3272B2'
+            name: Offshore wind
+            parent: wind
+        constraints:
+            energy_cap_max: inf
+            resource: file=wind_offshore.csv
+        costs:
+            monetary:
+                energy_cap: 2448.83  # 2016 GBP/kW {own_assumptions}
+                om_annual: 114.79  # 2016 GBP/kW {own_assumptions}
+            co2:
+                om_prod: 0.012  # kg CO2eq/kWh, {ipcc_ar5_wg3}
+        depreciation:
+            plant_life: 22
+
+    wind_onshore:
+        essentials:
+            color: '#6BA1D8'
+            name: Onshore wind
+            parent: wind
+        constraints:
+            energy_cap_max: 0  # Overridden in locations
+            resource: file=wind_onshore.csv
+        costs:
+            monetary:
+                energy_cap: 1404.65  # 2016 GBP/kW {own_assumptions}
+                om_annual: 40.28  # 2016 GBP/kW {own_assumptions}
+            co2:
+                om_prod: 0.011  # kg CO2eq/kWh, {ipcc_ar5_wg3}
+        depreciation:
+            plant_life: 24

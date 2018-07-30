@@ -1,0 +1,61 @@
+tech_groups:
+    conversion:
+        constraints:
+            lifetime: 25
+        costs:
+            co2:
+                interest_rate: 0
+            domestic:
+                interest_rate: 0
+            monetary:
+                interest_rate: 0.1
+    conversion_plus:
+        constraints:
+            lifetime: 25
+        costs:
+            co2:
+                interest_rate: 0
+            domestic:
+                interest_rate: 0
+            monetary:
+                interest_rate: 0.1
+    storage:
+        constraints:
+            lifetime: 25
+        costs:
+            co2:
+                interest_rate: 0
+            domestic:
+                interest_rate: 0
+            monetary:
+                interest_rate: 0.1
+    supply:
+        constraints:
+            lifetime: 25
+        costs:
+            co2:
+                interest_rate: 0
+            domestic:
+                interest_rate: 0
+            monetary:
+                interest_rate: 0.1
+    supply_plus:
+        constraints:
+            lifetime: 25
+        costs:
+            co2:
+                interest_rate: 0
+            domestic:
+                interest_rate: 0
+            monetary:
+                interest_rate: 0.1
+    transmission:
+        constraints:
+            lifetime: 25
+        costs:
+            co2:
+                interest_rate: 0
+            domestic:
+                interest_rate: 0
+            monetary:
+                interest_rate: 0.1

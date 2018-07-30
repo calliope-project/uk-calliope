@@ -1,0 +1,76 @@
+locations:
+    Z10:
+        techs:
+            pv_utility_scale:
+                constraints:
+                    energy_cap_equals: 491981
+    Z11:
+        techs:
+            pv_utility_scale:
+                constraints:
+                    energy_cap_equals: 801997
+    Z12:
+        techs:
+            pv_utility_scale:
+                constraints:
+                    energy_cap_equals: 1372880
+    Z13:
+        techs:
+            pv_utility_scale:
+                constraints:
+                    energy_cap_equals: 1639827
+    Z14:
+        techs:
+            pv_utility_scale:
+                constraints:
+                    energy_cap_equals: 44300
+    Z15:
+        techs:
+            pv_utility_scale:
+                constraints:
+                    energy_cap_equals: 288490
+    Z16:
+        techs:
+            pv_utility_scale:
+                constraints:
+                    energy_cap_equals: 606178
+    Z17:
+        techs:
+            pv_utility_scale:
+                constraints:
+                    energy_cap_equals: 1006170
+    Z3:
+        techs:
+            pv_utility_scale:
+                constraints:
+                    energy_cap_equals: 142000
+    Z4:
+        techs:
+            pv_utility_scale:
+                constraints:
+                    energy_cap_equals: 241510
+    Z5:
+        techs:
+            pv_utility_scale:
+                constraints:
+                    energy_cap_equals: 12000
+    Z6:
+        techs:
+            pv_utility_scale:
+                constraints:
+                    energy_cap_equals: 11100
+    Z7:
+        techs:
+            pv_utility_scale:
+                constraints:
+                    energy_cap_equals: 51810
+    Z8:
+        techs:
+            pv_utility_scale:
+                constraints:
+                    energy_cap_equals: 318530
+    Z9:
+        techs:
+            pv_utility_scale:
+                constraints:
+                    energy_cap_equals: 176851

@@ -1,5 +1,0 @@
-import:
-    - ren_90_stor.yaml
-    - setup_years.yaml
-
-parallel.name: calliope_years_90_stor

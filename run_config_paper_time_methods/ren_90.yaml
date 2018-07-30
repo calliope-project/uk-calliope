@@ -1,1 +1,0 @@
-override.group_fraction.output.supply_power_renewable: ['>=', 0.90]

@@ -1,0 +1,52 @@
+##
+# NB: all per_distance constraints here are per 100 km
+##
+
+tech_groups:
+    transmission_electricity:
+        essentials:
+            carrier: electricity
+            parent: transmission
+        constraints:
+            energy_eff: 1.0
+
+techs:
+    hvac:
+        essentials:
+            name: AC transmission (existing)
+            parent: transmission_electricity
+        costs:
+            monetary:
+                om_prod: 0.002
+            co2:
+                om_prod: 0.011
+        constraints:
+            energy_eff_per_distance: 0.995
+
+    hvac_new:
+        essentials:
+            name: AC transmission (new)
+            parent: transmission_electricity
+        costs:
+            monetary:
+                energy_cap: 0.5
+                om_prod: 0.001
+                energy_cap_per_distance: 26.8
+            co2:
+                om_prod: 0.011
+        constraints:
+            energy_eff_per_distance: 0.995
+
+    hvdc_subsea_new:
+        essentials:
+            name: Subsea DC transmission (new)
+            parent: transmission_electricity
+        costs:
+            monetary:
+                energy_cap: 140
+                om_prod: 0.001
+                energy_cap_per_distance: 80
+            co2:
+                om_prod: 0.003
+        constraints:
+            energy_eff_per_distance: 0.998

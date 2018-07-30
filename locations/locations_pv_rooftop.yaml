@@ -1,0 +1,96 @@
+locations:
+    Z10:
+        techs:
+            pv_rooftop:
+                constraints:
+                    energy_cap_min: 94213
+    Z11:
+        techs:
+            pv_rooftop:
+                constraints:
+                    energy_cap_min: 636530
+    Z12:
+        techs:
+            pv_rooftop:
+                constraints:
+                    energy_cap_min: 318800
+    Z13:
+        techs:
+            pv_rooftop:
+                constraints:
+                    energy_cap_min: 315251
+    Z14:
+        techs:
+            pv_rooftop:
+                constraints:
+                    energy_cap_min: 513599
+    Z15:
+        techs:
+            pv_rooftop:
+                constraints:
+                    energy_cap_min: 141071
+    Z16:
+        techs:
+            pv_rooftop:
+                constraints:
+                    energy_cap_min: 303848
+    Z17:
+        techs:
+            pv_rooftop:
+                constraints:
+                    energy_cap_min: 250297
+    Z1_1:
+        techs:
+            pv_rooftop:
+                constraints:
+                    energy_cap_min: 18035
+    Z1_2:
+        techs:
+            pv_rooftop:
+                constraints:
+                    energy_cap_min: 9168
+    Z1_3:
+        techs:
+            pv_rooftop:
+                constraints:
+                    energy_cap_min: 11186
+    Z2:
+        techs:
+            pv_rooftop:
+                constraints:
+                    energy_cap_min: 49943
+    Z3:
+        techs:
+            pv_rooftop:
+                constraints:
+                    energy_cap_min: 61677
+    Z4:
+        techs:
+            pv_rooftop:
+                constraints:
+                    energy_cap_min: 16379
+    Z5:
+        techs:
+            pv_rooftop:
+                constraints:
+                    energy_cap_min: 205750
+    Z6:
+        techs:
+            pv_rooftop:
+                constraints:
+                    energy_cap_min: 15175
+    Z7:
+        techs:
+            pv_rooftop:
+                constraints:
+                    energy_cap_min: 168998
+    Z8:
+        techs:
+            pv_rooftop:
+                constraints:
+                    energy_cap_min: 204818
+    Z9:
+        techs:
+            pv_rooftop:
+                constraints:
+                    energy_cap_min: 375228
