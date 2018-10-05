@@ -1,8 +1,0 @@
-# Runs to determine worst/best weather years
-combinations: [
-    ['run_cluster'],
-    ['base'],
-    ['cost_batt_high', 'cost_batt_low', 'cost_batt_breakthrough'],
-    ['w1990', 'w1991', 'w1992', 'w1993', 'w1994', 'w1995', 'w1996', 'w1997', 'w1998', 'w1999', 'w2000', 'w2001', 'w2002', 'w2003', 'w2004', 'w2005', 'w2006', 'w2007', 'w2008', 'w2009', 'w2010', 'w2011', 'w2012', 'w2013', 'w2014'],
-    ['r30', 'r60', 'r90']
-]

@@ -1,15 +1,13 @@
 tech_groups:
     pv:
         constraints:
-            resource_area_max: inf
-            resource_area_per_energy_cap: 1.0
+            resource_unit: energy_per_capacity
         essentials:
             parent: supply_electricity_renewable
 
     wind:
         constraints:
-            resource_area_max: inf
-            resource_area_per_energy_cap: 1.0
+            resource_unit: energy_per_capacity
         essentials:
             parent: supply_electricity_renewable
 

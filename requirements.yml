@@ -2,8 +2,7 @@ name: uk-calliope
 
 channels:
     - conda-forge
-    - anaconda
 
 dependencies:
     - python=3.6
-    - calliope=0.6.2
+    - calliope=0.6.3

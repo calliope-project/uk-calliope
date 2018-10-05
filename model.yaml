@@ -1,4 +1,5 @@
 import:
+    - overrides.yaml
     - techs.yaml
     ###
     # Renewables
@@ -19,7 +20,7 @@ import:
 
 model:
     name: UK-Calliope
-    calliope_version: 0.6.2
+    calliope_version: 0.6.3
     timeseries_data_path: data
     reserve_margin:
         electricity: 0.1
