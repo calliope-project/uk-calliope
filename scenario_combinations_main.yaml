@@ -1,0 +1,8 @@
+# Main scenario runs
+combinations: [
+    ['run_cluster'],
+    ['base', 'no_imports', 'double_imports', 'new_nuclear'],
+    ['cost_batt_high', 'cost_batt_low', 'cost_batt_breakthrough'],
+    ['worst_year', 'best_year'],
+    ['r30', 'r40', 'r50', 'r60', 'r70', 'r80', 'r90', 'r99', 'r100']
+]

@@ -1,41 +1,9 @@
 locations:
-    Z11:
-        techs:
-            hvdc_import:
-                constraints:
-                    energy_cap_equals: 1400000.0
-    Z15:
-        techs:
-            hvdc_import:
-                constraints:
-                    energy_cap_equals: 5000000.0
-    Z16:
-        techs:
-            hvdc_import:
-                constraints:
-                    energy_cap_equals: 1000000.0
-    Z17:
-        techs:
-            hvdc_import:
-                constraints:
-                    energy_cap_equals: 1400000.0
-    Z2:
-        techs:
-            hvdc_import:
-                constraints:
-                    energy_cap_equals: 1400000.0
-    Z6:
-        techs:
-            hvdc_import:
-                constraints:
-                    energy_cap_equals: 500000.0
-    Z7:
-        techs:
-            hvdc_import:
-                constraints:
-                    energy_cap_equals: 1400000.0
-    Z9:
-        techs:
-            hvdc_import:
-                constraints:
-                    energy_cap_equals: 500000.0
+    Z2.techs.hvdc_import.constraints.energy_cap_equals: 1400000  #  {ETYS2016} Norwegian Link 2
+    Z6.techs.hvdc_import.constraints.energy_cap_equals: 500000  # {ETYS2016} Moyle
+    Z7.techs.hvdc_import.constraints.energy_cap_equals: 1400000  # {ETYS2016} NSN
+    Z9.techs.hvdc_import.constraints.energy_cap_equals: 450000  # {ETYS2016} East-West (Wales-Ireland)
+    Z11.techs.hvdc_import.constraints.energy_cap_equals: 1400000  # {ETYS2016} Viking
+    Z15.techs.hvdc_import.constraints.energy_cap_equals: 5200000  # {ETYS2016} NEMO, IFA, Eleclink, Britned
+    Z16.techs.hvdc_import.constraints.energy_cap_equals: 1000000  # {ETYS2016} IFA2
+    Z17.techs.hvdc_import.constraints.energy_cap_equals: 1400000  # {ETYS2016} FAB

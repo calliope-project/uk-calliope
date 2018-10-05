@@ -8,39 +8,39 @@ locations:
         techs:
             hydro_existing:
                 constraints:
-                    energy_cap_equals: 19000.0
+                    energy_cap_equals: 19000
     Z1_3:
         techs:
             hydro_existing:
                 constraints:
-                    energy_cap_equals: 127000.0
+                    energy_cap_equals: 127000
     Z1_4:
         techs:
             hydro_existing:
                 constraints:
-                    energy_cap_equals: 420000.0
+                    energy_cap_equals: 420000
     Z2:
         techs:
             hydro_existing:
                 constraints:
-                    energy_cap_equals: 20000.0
+                    energy_cap_equals: 20000
     Z3:
         techs:
             hydro_existing:
                 constraints:
-                    energy_cap_equals: 509000.0
+                    energy_cap_equals: 509000
     Z5:
         techs:
             hydro_existing:
                 constraints:
-                    energy_cap_equals: 15000.0
+                    energy_cap_equals: 15000
     Z6:
         techs:
             hydro_existing:
                 constraints:
-                    energy_cap_equals: 33000.0
+                    energy_cap_equals: 33000
     Z9:
         techs:
             hydro_existing:
                 constraints:
-                    energy_cap_equals: 79000.0
+                    energy_cap_equals: 79000
