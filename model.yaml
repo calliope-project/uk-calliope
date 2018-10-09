@@ -17,27 +17,18 @@ import:
     - locations/transmission_grid_2030.yaml
     - locations/locations_fossil_nuclear_no_new_nuclear_2030.yaml
 
-
 model:
     name: UK-Calliope
     calliope_version: 0.6.3
     timeseries_data_path: data
     reserve_margin:
         electricity: 0.1
-    subset_time: '2012'
-
+    random_seed: 23
 
 run:
     cyclic_storage: true
     ensure_feasibility: true
     bigM: 1e9
-
-
-# time:
-#     function: resample
-#     function_options:
-#         resolution: 1H
-
 
 techs:
     battery:
@@ -57,7 +48,6 @@ techs:
         constraints:
             resource: file=demand.csv
             resource_scale: 1000  # kW to MW
-
 
 locations:
     Z1_1,Z1_2,Z1_3,Z1_4,Z2,Z3,Z4,Z5,Z6,Z7,Z8,Z9,Z10,Z11,Z12,Z13,Z14,Z15,Z16,Z17:

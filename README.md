@@ -15,7 +15,7 @@ The main model specification is in ``model.yaml``. Timeseries data are in ``data
 To run the model over a week of data for testing:
 
 ```bash
-calliope run model.yaml --override_file="example_scenarios.yaml:run_test"  --save_netcdf=output.nc --save_plots=plots.html
+calliope run model.yaml --scenario=run_test  --save_netcdf=output.nc --save_plots=plots.html
 ```
 
 To generate some sample scenario runs:

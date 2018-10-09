@@ -1,13 +1,13 @@
 tech_groups:
     pv:
         constraints:
-            resource_unit: energy_per_capacity
+            resource_unit: energy_per_cap
         essentials:
             parent: supply_electricity_renewable
 
     wind:
         constraints:
-            resource_unit: energy_per_capacity
+            resource_unit: energy_per_cap
         essentials:
             parent: supply_electricity_renewable
 
